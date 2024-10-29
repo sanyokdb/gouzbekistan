@@ -21,7 +21,7 @@
   --scrollbar-track-bg: var(--color-primary-light);
   --scrollbar-thumb-bg: var(--color-primary-1);
   --scrollbar-thumb-hover-bg: var(--color-primary-1);
-  --body-font-size: 16px;
+  --body-font-size: 1rem;
   --body-font-weight: 400;
   --body-line-height: 1.5;
   --body-bg: #ffffff;
