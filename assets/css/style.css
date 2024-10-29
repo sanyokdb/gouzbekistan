@@ -161,6 +161,10 @@ input[type=number]::-webkit-outer-spin-button {
   --bs-btn-font-weight: 600;
 }
 
+.btn-link {
+  --bs-btn-font-weight: 400;
+}
+
 .btn-custom2 {
   --bs-btn-color: var(--color-primary);
   --bs-btn-bg: var(--color-secondary);
