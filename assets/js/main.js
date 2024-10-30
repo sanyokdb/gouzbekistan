@@ -1,9 +1,9 @@
 const heroSlider = new Swiper('#hero-slider', {
   loop: true,
   effect: "fade",
-  // autoplay: {
-  //   delay: 4500,
-  // },
+  autoplay: {
+    delay: 4500,
+  },
 
   // If we need pagination
   pagination: {
