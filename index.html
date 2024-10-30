@@ -9,6 +9,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/img/favicons/114x114.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/img/favicons/72x72.png">
   <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet">
   <link href="./assets/css/style.min.css" rel="stylesheet">
 </head>
 <body>
@@ -97,7 +98,9 @@
         <a class="navbar-brand" href="#">
           <img src="./assets/img/logo.svg" width="150" height="60" alt="GoUzbekistan">
         </a>
-        
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <a href="./index.html"><img src="./assets/img/logo.svg" width="125" height="50" alt="GoUzbekistan"></a>
@@ -303,7 +306,7 @@
                 <a class="nav-link" href="#">О нас</a>
               </li>
             </ul>
-            <a class="btn btn-pill btn-custom2" href="#!">
+            <a class="btn btn-pill btn-custom2 py-25 px-3 px-xl-4" href="#!">
               Создайте свой тур
               <svg class="svgicon">
                 <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
@@ -311,20 +314,40 @@
             </a>
           </div>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </div>
     </nav>
 
   </header>
 
-  <section style="height: 600px; background-color: var(--color-primary-light);">
-
-  </section>
+  <main class="main">
+    <section class="hero">
+      <div class="swiper" id="hero-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./assets/img/slider/001.webp" type="image/webp">
+              <img class="hero__img" src="./assets/img/slider/001.jpg" width="1920" height="1000" alt="Заголовок">
+            </picture>
+            <div class="hero__overlay"></div>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./assets/img/slider/002.webp" type="image/webp">
+              <img class="hero__img" src="./assets/img/slider/002.jpg" width="1920" height="1000" alt="Заголовок">
+            </picture>
+            <div class="hero__overlay"></div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  </main>
 
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
   <script src="./assets/js/main.js"></script>
 
 </body>
