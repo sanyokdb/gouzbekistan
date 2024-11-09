@@ -1372,6 +1372,7 @@ img.shape-decor--topleft {
   width: 100%;
   max-width: 100%;
   height: auto;
+  transition: transform 0.3s ease-in-out;
 }
 .post-card__type {
   position: absolute;
@@ -1420,4 +1421,7 @@ img.shape-decor--topleft {
 }
 .post-card__readmore {
   margin-top: auto;
+}
+.post-card:hover .post-card__img {
+  transform: scale(1.1);
 }
