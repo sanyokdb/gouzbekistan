@@ -53,3 +53,33 @@ const review = new Swiper(".review-slider", {
     },
   },
 });
+
+
+// review-slider
+const postSlider = new Swiper(".post-slider", {
+  slidesPerView: 1,
+  speed: 600,
+  autoHeight: true,
+  // loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
