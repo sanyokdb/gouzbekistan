@@ -159,6 +159,12 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
@@ -168,6 +174,14 @@ input[type=number]::-webkit-outer-spin-button {
 .visually-hidden {
   position: fixed;
   transform: scale(0);
+}
+
+.bg-tertiary-light {
+  background-color: var(--color-tertiary-light) !important;
+}
+
+.bg-primary-dark {
+  background-color: var(--color-primary-dark) !important;
 }
 
 .py-25 {
@@ -302,17 +316,17 @@ input[type=number]::-webkit-outer-spin-button {
   overflow: hidden;
 }
 .btn-blick::after {
-  content: "";
   position: absolute;
   top: -50%;
   bottom: -50%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6) 100%);
-  width: 45px;
-  transform: skewX(-22deg);
   left: -65%;
-  animation-name: btnblick;
+  transform: skewX(-22deg);
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  animation-name: btnblick;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6) 100%);
+  width: 45px;
+  content: "";
 }
 @keyframes btnblick {
   60% {
@@ -326,6 +340,63 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 10rem;
 }
 
+.btn-play {
+  display: inline-flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: var(--bs-white);
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  line-height: 1;
+}
+.btn-play::before, .btn-play::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: -1;
+  animation: ripple-2 2s infinite ease-in-out;
+  border-radius: 50%;
+  background: var(--bs-white);
+  content: "";
+}
+.btn-play::after {
+  opacity: 0.6;
+  animation: ripple-2 2s infinite ease-in-out;
+  animation-delay: 0s;
+  animation-delay: 0.5s;
+}
+.btn-play:hover {
+  background-color: var(--bs-white);
+}
+.btn-play.btn-primary {
+  background-color: var(--color-primary);
+}
+.btn-play.btn-primary::before, .btn-play.btn-primary::after {
+  background-color: var(--color-primary);
+}
+.btn-play.btn-primary:hover {
+  background-color: var(--color-primary);
+}
+@keyframes ripple-2 {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
 .tabs-round {
   gap: 6px;
 }
@@ -492,6 +563,101 @@ img.shape-decor--topleft {
   width: 24px;
 }
 
+.lightbox-image,
+.lightbox-media {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.lightbox-image img,
+.lightbox-media img {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1);
+  transition: 0.3s ease;
+}
+.lightbox-image .icon,
+.lightbox-media .icon {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(var(--bs-primary-rgb), 0.75);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: rgba(var(--bs-white-rgb), 0.9);
+  transition: ease-out 0.16s;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+}
+.lightbox-image::after,
+.lightbox-media::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background: rgba(var(--color-overlay-rgb), 0.5);
+  transition: 0.3s ease-in-out;
+}
+.lightbox-image:hover img,
+.lightbox-media:hover img {
+  transform: scale(1.2);
+}
+.lightbox-image:hover .icon,
+.lightbox-media:hover .icon {
+  transform: translate(-50%, -50%) scale(0.94);
+}
+.lightbox-image:hover::after,
+.lightbox-media:hover::after {
+  opacity: 1;
+}
+
+.lightbox-media .icon {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3e%3cpath d='M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z' fill='%23ffffff'/%3e%3c/svg%3e");
+}
+
+.lightbox-image .icon {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath d='M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z' fill='%23ffffff'/%3e%3c/svg%3e");
+}
+
+.image-link {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--bs-border-radius);
+  display: block;
+}
+.image-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--bs-black-rgb), 0.3);
+  transition: 0.3s ease;
+}
+.image-link img {
+  transform: scale(1);
+  width: 100%;
+  height: auto;
+  transition: 0.3s ease;
+}
+.image-link:hover img {
+  transform: scale(1.04);
+}
+.image-link:hover::before {
+  opacity: 1;
+}
+
 .header-top {
   --height: 46px;
   --icon-size: 1.25rem;
@@ -614,6 +780,10 @@ img.shape-decor--topleft {
   100% {
     transform: translateX(-2px) rotate(0);
   }
+}
+.header-nav .navbar-brand img {
+  width: 150px;
+  height: 60px;
 }
 .header-nav .dropdown-menu {
   border-width: 0;
@@ -1031,6 +1201,59 @@ img.shape-decor--topleft {
   border-radius: 50px;
 }
 
+.section-about__image {
+  position: relative;
+  border-radius: 10px;
+  padding-top: 140%;
+  overflow: hidden;
+}
+.section-about__image:hover .section-about__img {
+  transform: scale(1.1);
+}
+.section-about__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+.section-about__btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.section-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--color-tertiary-light);
+  height: 100%;
+}
+.section-contact-info__inner {
+  width: 100%;
+  max-width: 660px;
+  padding: 60px calc(var(--bs-gutter-x) * 0.5);
+}
+@media (min-width: 992px) {
+  .section-contact-info__inner {
+    padding-right: 220px;
+  }
+}
+
+.section-contact-form {
+  background-color: var(--color-primary-dark);
+  height: 100%;
+}
+.section-contact-form__inner {
+  padding: 60px;
+}
 .package-card {
   display: flex;
   flex-direction: column;
