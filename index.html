@@ -1373,12 +1373,12 @@
     </section>
 
     <section class="section-cta">
-      <div class="container">
+      <div class="container section-cta__container">
+        <div class="section-cta__image">
+          <img class="section-cta__img" src="./assets/img/cta/girl.png" width="548" height="388" alt="girl">
+        </div>
         <div class="row align-items-center">
-          <div class="col-lg-6 section-cta__image">
-            <img class="section-cta__img" src="./assets/img/cta/girl.png" width="548" height="388" alt="girl">
-          </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 offset-lg-6">
             <div class="section-cta__content">
               <h3 class="fs-1 fw-800 mb-4">Получить консультацию сейчас!</h3>
               <p class="section-cta__text">Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt blandit interdum.</p>
@@ -1717,7 +1717,7 @@
                     <h6 class="mb-1 fw-400">Адрес</h6>
                     <address class="fs-5 fw-600 lh-sm">
                       Узбекистан, г.Бухара<br class="d-none d-md-block">
-                      Самогонная ул., 14/05 Лайт-Сити
+                      Самогонная ул.,<br class="d-none d-md-block"> 14/05 Лайт-Сити
                     </address>
                   </div>
                 </div>
@@ -1726,8 +1726,31 @@
           </div>
           <div class="col-xl-6 p-0">
             <div class="section-contact-form">
-              <div class="section-contact-form__inner">
+              <div class="container section-contact-form__inner">
                 <h3 class="fs-1 fw-800 mb-4 section-contact-form__title">Связаться</h3>
+                <form class="form-light">
+                  <div class="form-floating form-floating--icon mb-4">
+                    <svg class="icon fs-24"><use href="./assets/img/svgsprite/sprite.symbol.svg#user"></use></svg>
+                    <input type="text" class="form-control" id="yourName" placeholder="Как вас зовуть?" required="">
+                    <label for="yourName">Ваше имя</label>
+                  </div>
+                  <div class="form-floating form-floating--icon mb-4">
+                    <svg class="icon fs-24"><use href="./assets/img/svgsprite/sprite.symbol.svg#phone"></use></svg>
+                    <input type="text" class="form-control" id="yourPhone" placeholder="Ваш номер" required="">
+                    <label for="yourPhone">Ваш номер</label>
+                  </div>
+                  <div class="form-floating form-floating--icon mb-4">
+                    <svg class="icon fs-24"><use href="./assets/img/svgsprite/sprite.symbol.svg#mail"></use></svg>
+                    <input type="text" class="form-control" id="yourEmail" placeholder="Ваш адрес эл.почты" required="">
+                    <label for="yourEmail">Ваш Е-mail</label>
+                  </div>
+                  <div class="form-floating form-floating--icon mb-4">
+                    <svg class="icon fs-24"><use href="./assets/img/svgsprite/sprite.symbol.svg#mail"></use></svg>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px"></textarea>
+                    <label for="floatingTextarea2">Напишите сообщение</label>
+                  </div>
+                  <button class="btn btn-custom3 btn-lg" type="submit">Отправить</button>
+                </form>
               </div>
             </div>
           </div>
@@ -1735,8 +1758,46 @@
       </div>
     </section>
 
-
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4 mb-lg-0">
+          <h5 class="footer__title">О нас</h5>
+          <ul class="footer__nav">
+            <li><a href="./about.html">О нас</a></li>
+            <li><a href="./team.html">Наша команда</a></li>
+            <li><a href="./reviews.html">Отзывы туристов</a></li>
+            <li><a href="./packages.html">Туры</a></li>
+            <li><a href="./hotels.html">Гостиницы</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4 mb-lg-0">
+          <h5 class="footer__title">Интересные</h5>
+          <ul class="footer__nav">
+            <li><a href="./news.html">Новости</a></li>
+            <li><a href="./post.html">Наш блог</a></li>
+            <li><a href="./attractions.html">Достопримечательности</a></li>
+            <li><a href="./loyalty-program.html">Программа лояльности</a></li>
+            <li><a href="./insurance.html">Страхование</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4 mb-lg-0">
+          <h5 class="footer__title">Полезные</h5>
+          <ul class="footer__nav">
+            <li><a href="./tour-booking.html">Бронирование тура</a></li>
+            <li><a href="./hotel-reservation.html">Бронирование гостиницы</a></li>
+            <li><a href="./customs-regulations.html">Таможенные правила</a></li>
+            <li><a href="./legends-and-myths.html">Легенды и мифы</a></li>
+            <li><a href="./conditions-booking-excursions.html">Условия бронирования экскурсий</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 class="footer__title">Мы Принимаем</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
