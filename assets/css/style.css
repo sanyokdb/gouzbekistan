@@ -436,6 +436,32 @@ img {
   left: 26px;
 }
 
+.form-light .form-control {
+  border-color: rgba(var(--bs-white-rgb), 0.7);
+  background-color: transparent;
+  color: var(--bs-white);
+}
+.form-light .form-control:focus {
+  border-color: var(--color-tertiary);
+}
+.form-light .form-floating--icon svg {
+  fill: rgba(var(--bs-white-rgb), 0.7);
+}
+.form-light .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
+  color: rgba(var(--bs-white-rgb), 0.7);
+}
+.form-light .form-floating > .form-control:focus ~ label,
+.form-light .form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: rgba(var(--bs-white-rgb), 0.7);
+}
+.form-light .form-floating > .form-control:not(:-moz-placeholder-shown) ~ label::after {
+  background-color: transparent;
+}
+.form-light .form-floating > .form-control:focus ~ label::after,
+.form-light .form-floating > .form-control:not(:placeholder-shown) ~ label::after {
+  background-color: transparent;
+}
+
 img.shape-decor {
   position: absolute;
   opacity: 0.03;
@@ -1174,32 +1200,33 @@ img.shape-decor--topleft {
   background-color: var(--color-primary-dark);
   color: var(--white);
 }
-.section-cta__image {
+.section-cta__container {
   position: relative;
-  text-align: right;
+}
+.section-cta__image {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  z-index: 2;
 }
 .section-cta__img {
-  margin-top: -40px;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
 .section-cta__content {
   padding: 60px 0;
+  position: relative;
+  z-index: 2;
 }
 .section-cta__text {
   font-size: 18px;
 }
 .section-cta__btns {
-  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-}
-@media (max-width: 1199.98px) {
-  .section-cta__image {
-    margin-top: 0;
-    align-self: flex-end;
-  }
+  margin-top: 40px;
 }
 @media (max-width: 991.98px) {
   .section-cta__image {
@@ -1294,10 +1321,24 @@ img.shape-decor--topleft {
 .section-contact-form {
   background-color: var(--color-primary-dark);
   height: 100%;
+  color: var(--bs-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section-contact-form__inner {
-  padding: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
 }
+@media (min-width: 1200px) {
+  .section-contact-form__inner {
+    padding-left: 60px;
+    margin: 0;
+    max-width: 660px;
+  }
+}
+
 .package-card {
   display: flex;
   flex-direction: column;
