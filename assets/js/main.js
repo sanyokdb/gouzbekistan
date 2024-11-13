@@ -1,3 +1,12 @@
+// Navbar scroll class
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+    $(".header-fixed").addClass("header-fixed--scrolled");
+  } else {
+    $(".header-fixed").removeClass("header-fixed--scrolled");
+  }
+});
+
 const heroSlider = new Swiper("#hero-slider", {
   loop: true,
   effect: "fade",
@@ -53,7 +62,6 @@ const review = new Swiper(".review-slider", {
     },
   },
 });
-
 
 // review-slider
 const postSlider = new Swiper(".post-slider", {
