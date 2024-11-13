@@ -1,12 +1,45 @@
+
+
 // Navbar scroll class
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 100) {
+  if ($(this).scrollTop() > 46) {
     $(".header-fixed").addClass("header-fixed--scrolled");
   } else {
     $(".header-fixed").removeClass("header-fixed--scrolled");
   }
 });
 
+//  Navbar overlay
+document.addEventListener("DOMContentLoaded", function(){
+  document.querySelectorAll('.navbar-nav .dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('shown.bs.dropdown', function () {
+        el_overlay = document.createElement('span');
+        el_overlay.className = 'navbar-nav-overlay';
+        document.body.appendChild(el_overlay)
+    });
+
+    everydropdown.addEventListener('hide.bs.dropdown', function () {
+      document.body.removeChild(document.querySelector('.navbar-nav-overlay'));
+    });
+  });
+
+});
+document.addEventListener("DOMContentLoaded", function(){
+  document.querySelectorAll('.navbar-search.dropdown').forEach(function(everydropdown){
+    everydropdown.addEventListener('shown.bs.dropdown', function () {
+        el_overlay = document.createElement('span');
+        el_overlay.className = 'navbar-search-overlay';
+        document.body.appendChild(el_overlay)
+    });
+
+    everydropdown.addEventListener('hide.bs.dropdown', function () {
+      document.body.removeChild(document.querySelector('.navbar-search-overlay'));
+    });
+  });
+
+});
+
+// Hero Slider
 const heroSlider = new Swiper("#hero-slider", {
   loop: true,
   effect: "fade",
