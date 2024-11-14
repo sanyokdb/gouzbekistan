@@ -1,5 +1,3 @@
-
-
 // Navbar scroll class
 $(window).scroll(function () {
   if ($(this).scrollTop() > 46) {
@@ -96,7 +94,7 @@ const review = new Swiper(".review-slider", {
   },
 });
 
-// review-slider
+// post-slider
 const postSlider = new Swiper(".post-slider", {
   slidesPerView: 1,
   speed: 600,
@@ -123,4 +121,9 @@ const postSlider = new Swiper(".post-slider", {
       slidesPerView: 4,
     },
   },
+});
+
+// Fancybox
+Fancybox.bind('[data-fancybox]', {
+  dragToClose: false,
 });
