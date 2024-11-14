@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoUzbekistan</title>
+  <link rel="shortcut icon" href="./assets/img/favicons/16x16.png">
+  <link rel="apple-touch-icon-precomposed" href="./assets/img/favicons/57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/img/favicons/114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/img/favicons/72x72.png">
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/css/fancybox.min.css" rel="stylesheet">
+  <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./assets/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header header-fixed">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__container">
+          <ul class="header-top__list">
+            <li class="d-sm-none ps-0">
+              <a href="./contact.html">
+                <svg class="icon">
+                  <use href="./assets/img/svgsprite/sprite.symbol.svg#phone"></use>
+                </svg>
+                Контакты
+              </a>
+            </li>
+            <li class="d-none d-sm-flex ps-0">
+              <a href="tel:+998123456789">
+                <svg class="icon vibrate">
+                  <use href="./assets/img/svgsprite/sprite.symbol.svg#phone"></use>
+                </svg>
+                <span class="fw-medium">+998 12 345-6789</span>
+              </a>
+            </li>
+            <li class="d-none d-lg-flex">
+              <a href="mailto:info@gouzbekistan.com">
+                <svg class="icon vibrate">
+                  <use href="./assets/img/svgsprite/sprite.symbol.svg#mail-send"></use>
+                </svg>
+                info@gouzbekistan.com
+              </a>
+            </li>
+          </ul>
+          <ul class="header-top__list ms-auto">
+            <li class="header-top__currency ps-0">
+              <div class="btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg class="icon vibrate">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#currency"></use>
+                  </svg>
+                  USD
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><span class="code">EUR</span> <span class="label">Евро</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span class="code">RUB</span> <span class="label">Российский рубль</span></a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-top__language pe-0">
+              <div class="btn-group">
+                <button type="button" class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./assets/img/flags/RU.svg" width="19" height="14" alt="Русский">
+                  <span class="d-none d-sm-inline-block">Русский</span>
+                  <span class="d-sm-none">РУ</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><img src="./assets/img/flags/GB.svg" width="19" height="14" alt="English"> English</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./assets/img/flags/UZ.svg" width="19" height="14" alt="Uzbek"> Uzbek</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="header-top__social d-none d-md-flex">
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              <svg class="icon">
+                <use href="./assets/img/svgsprite/sprite.symbol.svg#whatsapp"></use>
+              </svg>
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              <svg class="icon">
+                <use href="./assets/img/svgsprite/sprite.symbol.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              <svg class="icon">
+                <use href="./assets/img/svgsprite/sprite.symbol.svg#facebook-circle"></use>
+              </svg>
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              <svg class="icon">
+                <use href="./assets/img/svgsprite/sprite.symbol.svg#twitter-x"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg header-nav">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/logo.svg" width="150" height="60" alt="GoUzbekistan">
+        </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a href="./index.html"><img src="./assets/img/logo.svg" width="125" height="50" alt="GoUzbekistan"></a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./uzbekistan.html">Узбекистан</a>
+              </li>
+              <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Туры
+                </a>
+                <div class="dropdown-menu">
+                  <div class="mega-content p-lg-2">
+                    <div class="container-fluid p-0">
+                      <div class="row row-cols-1 row-cols-lg-3 row-cols-xl-5 g-2 g-lg-3">
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/001.webp" type="image/webp">
+                              <img src="./assets/img/navbar/001.jpg" width="340" height="220" alt="Групповые туры" loading="lazy">
+                            </picture>
+                            <h3>Групповые туры</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/002.webp" type="image/webp">
+                              <img src="./assets/img/navbar/002.jpg" width="340" height="220" alt="Индивидуальные туры" loading="lazy">
+                            </picture>
+                            <h3>Индивидуальные туры</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/003.webp" type="image/webp">
+                              <img src="./assets/img/navbar/003.jpg" width="340" height="220" alt="Специальные предложения" loading="lazy">
+                            </picture>
+                            <h3>Специальные предложения</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/004.webp" type="image/webp">
+                              <img src="./assets/img/navbar/004.jpg" width="340" height="220" alt="Комбинированные туры" loading="lazy">
+                            </picture>
+                            <h3>Комбинированные туры</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/005.webp" type="image/webp">
+                              <img src="./assets/img/navbar/005.jpg" width="340" height="220" alt="Экскурсии" loading="lazy">
+                            </picture>
+                            <h3>Экскурсии</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/006.webp" type="image/webp">
+                              <img src="./assets/img/navbar/006.jpg" width="340" height="220" alt="Культурные туры" loading="lazy">
+                            </picture>
+                            <h3>Культурные туры</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/007.webp" type="image/webp">
+                              <img src="./assets/img/navbar/007.jpg" width="340" height="220" alt="Авторские туры в Узбекистан" loading="lazy">
+                            </picture>
+                            <h3>Авторские туры в Узбекистан</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/008.webp" type="image/webp">
+                              <img src="./assets/img/navbar/008.jpg" width="340" height="220" alt="Короткие туры" loading="lazy">
+                            </picture>
+                            <h3>Короткие туры</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/009.webp" type="image/webp">
+                              <img src="./assets/img/navbar/009.jpg" width="340" height="220" alt="Экскурсионные туры" loading="lazy">
+                            </picture>
+                            <h3>Экскурсионные туры</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-mega">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Гостиницы
+                </a>
+                <div class="dropdown-menu">
+                  <div class="mega-content p-lg-2">
+                    <div class="container-fluid p-0">
+                      <div class="row row-cols-1 row-cols-lg-3 row-cols-xl-5 g-2 g-lg-3">
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/g001.webp" type="image/webp">
+                              <img src="./assets/img/navbar/g001.jpg" width="340" height="220" alt="Ташкент" loading="lazy">
+                            </picture>
+                            <h3>Ташкент</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/g002.webp" type="image/webp">
+                              <img src="./assets/img/navbar/g002.jpg" width="340" height="220" alt="Наманган" loading="lazy">
+                            </picture>
+                            <h3>Наманган</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/g003.webp" type="image/webp">
+                              <img src="./assets/img/navbar/g003.jpg" width="340" height="220" alt="Самарканд" loading="lazy">
+                            </picture>
+                            <h3>Самарканд</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/g004.webp" type="image/webp">
+                              <img src="./assets/img/navbar/g004.jpg" width="340" height="220" alt="Андижан" loading="lazy">
+                            </picture>
+                            <h3>Андижан</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/g005.webp" type="image/webp">
+                              <img src="./assets/img/navbar/g005.jpg" width="340" height="220" alt="Фергана" loading="lazy">
+                            </picture>
+                            <h3>Фергана</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/g006.webp" type="image/webp">
+                              <img src="./assets/img/navbar/g006.jpg" width="340" height="220" alt="Бухара" loading="lazy">
+                            </picture>
+                            <h3>Бухара</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/g007.webp" type="image/webp">
+                              <img src="./assets/img/navbar/g007.jpg" width="340" height="220" alt="Шахрисабз" loading="lazy">
+                            </picture>
+                            <h3>Шахрисабз</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/g008.webp" type="image/webp">
+                              <img src="./assets/img/navbar/g008.jpg" width="340" height="220" alt="Хива" loading="lazy">
+                            </picture>
+                            <h3>Хива</h3>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a class="navbar-nav-card" href="./packages.html">
+                            <picture>
+                              <source srcset="./assets/img/navbar/g009.webp" type="image/webp">
+                              <img src="./assets/img/navbar/g009.jpg" width="340" height="220" alt="Гиждуван" loading="lazy">
+                            </picture>
+                            <h3>Гиждуван</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./reviews.html">Отзывы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">О нас</a>
+              </li>
+            </ul>
+            <a class="btn btn-pill btn-lg btn-custom2 btn-blick d-lg-none" href="#!">
+              Создайте свой тур
+              <svg class="icon fs-18">
+                <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="navbar-search dropdown ms-auto me-3">
+          <button class="btn btn-link dropdown-toggle navbar-search__toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg class="icon icon--search">
+              <use href="./assets/img/svgsprite/sprite.symbol.svg#search"></use>
+            </svg>
+            <svg class="icon icon--close">
+              <use href="./assets/img/svgsprite/sprite.symbol.svg#close-lg"></use>
+            </svg>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end p-4">
+            <form class="d-flex" role="search">
+              <input class="form-control" type="search" placeholder="Найти" aria-label="Search">
+              <button class="btn btn-link" type="submit">
+                <svg class="icon">
+                  <use href="./assets/img/svgsprite/sprite.symbol.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <a class="btn btn-pill btn-lg btn-custom2 btn-blick d-none d-lg-inline-block" href="#!">
+          Создайте свой тур
+          <svg class="icon fs-18">
+            <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <ol class="breadcrumb page-header__breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Наш блог</li>
+      </ol>
+      <h1 class="page-header__title">Наш блог</h1>
+    </div>
+  </section>
+
+  <main class="main">
+
+    <div class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-1.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-2.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-3.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-4.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-5.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-6.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-7.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-8.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-1.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-2.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-3.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3">
+            <article class="post-card h-100">
+              <div class="post-card__image">
+                <a href="./post-detail.html">
+                  <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-4.jpg" width="800" height="600" alt="Заголовок">
+                </a>
+              </div>
+              <div class="post-card__content">
+                <div class="post-card__meta">
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                  </span>
+                  <span>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                  </span>
+                </div>
+                <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                  Читать далее
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <nav class="mt-5">
+          <ul class="pagination mb-0">
+            <li class="page-item paper disabled"><a class="page-link" href="#" title="«">«</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">12</a></li>
+            <li class="page-item paper page-paper"><a class="page-link" href="#">1 / 12</a></li>
+            <li class="page-item paper"><a class="page-link" href="#" title="»">»</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="section-contact">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-6 p-0">
+          <div class="section-contact-info">
+            <img class="section-contact-info__img" src="./assets/img/contact/girl.png" alt="girl">
+            <div class="container section-contact-info__inner">
+              
+              <h3 class="fs-1 fw-800 mb-4 section-contact-info__title">Нужна помощь в&nbsp;выборе&nbsp;тура?</h3>
+              <p class="section-contact-info__text fs-18 fw-500 mb-4 mb-md-5">Возникли затруднения с&nbsp;выбором проблемы?<br class="d-none d-md-block"> У&nbsp;нас есть опытные менеджеры, которые помогут Вам с&nbsp;выбором тур.</p>
+              <div class="contact-box mb-4 mb-lg-5">
+                <div class="contact-box__icon">
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#phone"></use>
+                  </svg>
+                </div>
+                <div class="contact-box__info">
+                  <h6 class="mb-1 fw-400">Номер телефона</h6>
+                  <a href="tel:+998001234567" class="fs-5 fw-600 lh-sm text-nowrap">+998 00 123 45 67</a>
+                </div>
+              </div>
+              <div class="contact-box mb-4 mb-lg-5">
+                <div class="contact-box__icon">
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#mail"></use>
+                  </svg>
+                </div>
+                <div class="contact-box__info">
+                  <h6 class="mb-1 fw-400">Е-майл</h6>
+                  <a href="mailto:info@yourmail.com" class="fs-5 fw-600 lh-sm text-nowrap">info@yourmail.com</a>
+                </div>
+              </div>
+              <div class="contact-box">
+                <div class="contact-box__icon">
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use>
+                  </svg>
+                </div>
+                <div class="contact-box__info">
+                  <h6 class="mb-1 fw-400">Адрес</h6>
+                  <address class="fs-5 fw-600 lh-sm">
+                    Узбекистан, г.Бухара<br class="d-none d-md-block">
+                    ул.Ислома Каримова 24
+                  </address>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 p-0">
+          <div class="section-contact-form">
+            <div class="container section-contact-form__inner">
+              <h3 class="fs-1 fw-800 mb-4 section-contact-form__title">Связаться</h3>
+              <form class="form-light">
+                <div class="form-floating form-floating--icon mb-4">
+                  <svg class="icon fs-24"><use href="./assets/img/svgsprite/sprite.symbol.svg#user"></use></svg>
+                  <input type="text" class="form-control" id="yourName" placeholder="Как вас зовуть?" required="">
+                  <label for="yourName">Ваше имя</label>
+                </div>
+                <div class="form-floating form-floating--icon mb-4">
+                  <svg class="icon fs-24"><use href="./assets/img/svgsprite/sprite.symbol.svg#phone"></use></svg>
+                  <input type="text" class="form-control" id="yourPhone" placeholder="Ваш номер" required="">
+                  <label for="yourPhone">Ваш номер</label>
+                </div>
+                <div class="form-floating form-floating--icon mb-4">
+                  <svg class="icon fs-24"><use href="./assets/img/svgsprite/sprite.symbol.svg#mail"></use></svg>
+                  <input type="text" class="form-control" id="yourEmail" placeholder="Ваш адрес эл.почты" required="">
+                  <label for="yourEmail">Ваш Е-mail</label>
+                </div>
+                <div class="form-floating form-floating--icon mb-4">
+                  <svg class="icon fs-24"><use href="./assets/img/svgsprite/sprite.symbol.svg#message"></use></svg>
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px"></textarea>
+                  <label for="floatingTextarea2">Напишите сообщение</label>
+                </div>
+                <button class="btn btn-custom3 btn-lg" type="submit">Отправить</button>
+                <div class="text-success mt-3 w-100 d-none">
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#checkbox-circle"></use>
+                  </svg>
+                  Спасибо за Ваше сообщение. Оно успешно отправлено.
+                </div>
+                <div class="text-danger mt-3 w-100 d-none">
+                  <svg class="icon">
+                    <use href="./assets/img/svgsprite/sprite.symbol.svg#error-warning"></use>
+                  </svg>
+                  При отправке сообщения произошла ошибка. Пожалуйста, попробуйте ещё раз позже.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer-top">
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <h5 class="text-white fs-18 fw-700 mb-3">О нас</h5>
+            <ul class="footer__nav nav flex-column">
+              <li><a href="./about.html">О нас</a></li>
+              <li><a href="./team.html">Наша команда</a></li>
+              <li><a href="./reviews.html">Отзывы туристов</a></li>
+              <li><a href="./packages.html">Туры</a></li>
+              <li><a href="./hotels.html">Гостиницы</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h5 class="text-white fs-18 fw-700 mb-3">Интересные</h5>
+            <ul class="footer__nav">
+              <li><a href="./news.html">Новости</a></li>
+              <li><a href="./post.html">Наш блог</a></li>
+              <li><a href="./attractions.html">Достопримечательности</a></li>
+              <li><a href="./loyalty-program.html">Программа лояльности</a></li>
+              <li><a href="./insurance.html">Страхование</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h5 class="text-white fs-18 fw-700 mb-3">Полезные</h5>
+            <ul class="footer__nav">
+              <li><a href="./tour-booking.html">Бронирование тура</a></li>
+              <li><a href="./hotel-reservation.html">Бронирование гостиницы</a></li>
+              <li><a href="./customs-regulations.html">Таможенные правила</a></li>
+              <li><a href="./legends-and-myths.html">Легенды и мифы</a></li>
+              <li><a href="./conditions-booking-excursions.html">Условия бронирования экскурсий</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <h5 class="text-white fs-18 fw-700 mb-3">Мы Принимаем</h5>
+            <div class="footer__payment mb-4"><img class="footer__payment-img" src="./assets/img/payment.png" width="206" height="69" alt="payment"></div>
+            <h5 class="text-white fs-18 fw-700 mb-2">Мы в соц.сетях</h5>
+            <div class="footer__social">
+              <a href="#!" target="_blank" rel="noopener noreferrer">
+                <svg class="icon">
+                  <use href="./assets/img/svgsprite/sprite.symbol.svg#whatsapp"></use>
+                </svg>
+              </a>
+              <a href="#!" target="_blank" rel="noopener noreferrer">
+                <svg class="icon">
+                  <use href="./assets/img/svgsprite/sprite.symbol.svg#instagram"></use>
+                </svg>
+              </a>
+              <a href="#!" target="_blank" rel="noopener noreferrer">
+                <svg class="icon">
+                  <use href="./assets/img/svgsprite/sprite.symbol.svg#facebook-circle"></use>
+                </svg>
+              </a>
+              <a href="#!" target="_blank" rel="noopener noreferrer">
+                <svg class="icon">
+                  <use href="./assets/img/svgsprite/sprite.symbol.svg#twitter-x"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-12 col-md-6">
+              <p class="mb-lg-0">
+                &copy; 2024 «Go Uzbekistan». Все права защищены. <a href="./sitemap.html">Карта сайта</a><br>
+                ул. Ислома Каримова 24, Бухара 200104, Узбекистан.<br>
+                <a href="./privacy-policy.html">Политика Конфиденциальности</a> | <a href="./hotels-travel-agencies.html">Гостиницам и турагенствам</a>
+              </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="text-start text-md-end">
+              <a href="https://areainfo.uz/sozdanie-web-saytov" target="_blank">Создание сайтов в Узбекистане</a><br>
+              <a href="https://areainfo.uz/promo-prodvijenie-saytov" target="_blank">Продвижение сайтов в Узбекистане</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scrollup" id="scrollUp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="scrollup__icon" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+    </svg>
+  </div>
+
+  <!-- Modal OutPrice -->
+  <div class="modal fade" id="modalOutprice" tabindex="-1" aria-labelledby="modalOutpriceLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalOutpriceLabel">Узнать стоимость</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Иван Иванов" required="" value="">
+              <label for="name"><span class="text-danger">*</span> Ваше имя</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="+998 00 000-00-00" value="">
+              <label for="phone">Телефон</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="" value="">
+              <label for="email">E-mail</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn py-25 btn-outline-secondary flex-grow-1" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn py-25 btn-primary flex-grow-1">Отправить</button>
+          <div class="text-success mt-3 w-100 d-none">
+            <svg class="icon">
+              <use href="./assets/img/svgsprite/sprite.symbol.svg#checkbox-circle"></use>
+            </svg>
+            Спасибо за Ваше сообщение. Оно успешно отправлено.
+          </div>
+          <div class="text-danger mt-3 w-100 d-none">
+            <svg class="icon">
+              <use href="./assets/img/svgsprite/sprite.symbol.svg#error-warning"></use>
+            </svg>
+            При отправке сообщения произошла ошибка. Пожалуйста, попробуйте ещё раз позже.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/fancybox.umd.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
