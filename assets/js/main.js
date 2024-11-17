@@ -8,33 +8,39 @@ $(window).scroll(function () {
 });
 
 //  Navbar overlay
-document.addEventListener("DOMContentLoaded", function(){
-  document.querySelectorAll('.navbar-nav .dropdown').forEach(function(everydropdown){
-    everydropdown.addEventListener('shown.bs.dropdown', function () {
-        el_overlay = document.createElement('span');
-        el_overlay.className = 'navbar-nav-overlay';
-        document.body.appendChild(el_overlay)
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .querySelectorAll(".navbar-nav .dropdown")
+    .forEach(function (everydropdown) {
+      everydropdown.addEventListener("shown.bs.dropdown", function () {
+        el_overlay = document.createElement("span");
+        el_overlay.className = "navbar-nav-overlay";
+        document.body.appendChild(el_overlay);
+      });
 
-    everydropdown.addEventListener('hide.bs.dropdown', function () {
-      document.body.removeChild(document.querySelector('.navbar-nav-overlay'));
+      everydropdown.addEventListener("hide.bs.dropdown", function () {
+        document.body.removeChild(
+          document.querySelector(".navbar-nav-overlay")
+        );
+      });
     });
-  });
-
 });
-document.addEventListener("DOMContentLoaded", function(){
-  document.querySelectorAll('.navbar-search.dropdown').forEach(function(everydropdown){
-    everydropdown.addEventListener('shown.bs.dropdown', function () {
-        el_overlay = document.createElement('span');
-        el_overlay.className = 'navbar-search-overlay';
-        document.body.appendChild(el_overlay)
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .querySelectorAll(".navbar-search.dropdown")
+    .forEach(function (everydropdown) {
+      everydropdown.addEventListener("shown.bs.dropdown", function () {
+        el_overlay = document.createElement("span");
+        el_overlay.className = "navbar-search-overlay";
+        document.body.appendChild(el_overlay);
+      });
 
-    everydropdown.addEventListener('hide.bs.dropdown', function () {
-      document.body.removeChild(document.querySelector('.navbar-search-overlay'));
+      everydropdown.addEventListener("hide.bs.dropdown", function () {
+        document.body.removeChild(
+          document.querySelector(".navbar-search-overlay")
+        );
+      });
     });
-  });
-
 });
 
 // Hero Slider
@@ -124,6 +130,41 @@ const postSlider = new Swiper(".post-slider", {
 });
 
 // Fancybox
-Fancybox.bind('[data-fancybox]', {
+Fancybox.bind("[data-fancybox]", {
   dragToClose: false,
+});
+
+//
+$("#add-photo").on("click", function () {
+  $("#gallery-upload").slideToggle(100);
+});
+
+let galleryAlert = $("#gallery-alert");
+let galleryFiles = $("#gallery-files");
+let galleryImages = $("#gallery-images");
+
+let galleryDropzone = new Dropzone("div#gallery-upload", {
+  url: "/assets/img/review/thumbs",
+  paramName: "thumbs",
+  maxFiles: 4,
+  maxFilesize: 1,
+  acceptedFiles: ".jpg, .png",
+  dictFileTooBig: "Максимальный размер файла - 1 Мб",
+  dictMaxFilesExceeded: "Вы не можете загружать больше файлов",
+  dictInvalidFileType: "К загрузке разрешены разрешения: .jpg, .png",
+  dictRemoveFile: '<svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#delete"></use></svg>',
+  dictCancelUpload: '<svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#delete"></use></svg>',
+  addRemoveLinks: true,
+  parallelUploads: 1,
+  error: function(file, errorMessage){
+    $('.gallery-alert').remove();
+    $('#gallery-alert').append('<div class="gallery-alert text-danger mb-3 w-100"><svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#error-warning"></use></svg> '+ errorMessage +'</div>');
+    galleryDropzone.removeFile(file);
+  },
+
+  success: function (file, response) {
+    console.log(file);
+    console.log(response);
+  },
+
 });
