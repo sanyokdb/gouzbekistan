@@ -100,6 +100,50 @@ const review = new Swiper(".review-slider", {
   },
 });
 
+// review-slider
+const review2 = new Swiper(".review-slider2", {
+  speed: 600,
+  autoHeight: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  }
+});
+
+// country-slider
+const country = new Swiper(".country-slider", {
+  speed: 600,
+  slidesPerView: 1,
+  spaceBetween: 15,
+  // centeredSlides: true,
+  // loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    478: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});
+
 // post-slider
 const postSlider = new Swiper(".post-slider", {
   slidesPerView: 1,
@@ -134,15 +178,13 @@ Fancybox.bind("[data-fancybox]", {
   dragToClose: false,
 });
 
-//
+// Dropzone
 $("#add-photo").on("click", function () {
   $("#gallery-upload").slideToggle(100);
 });
-
 let galleryAlert = $("#gallery-alert");
 let galleryFiles = $("#gallery-files");
 let galleryImages = $("#gallery-images");
-
 let galleryDropzone = new Dropzone("div#gallery-upload", {
   url: "/assets/img/review/thumbs",
   paramName: "thumbs",
@@ -156,15 +198,13 @@ let galleryDropzone = new Dropzone("div#gallery-upload", {
   dictCancelUpload: '<svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#delete"></use></svg>',
   addRemoveLinks: true,
   parallelUploads: 1,
-  error: function(file, errorMessage){
-    $('.gallery-alert').remove();
-    $('#gallery-alert').append('<div class="gallery-alert text-danger mb-3 w-100"><svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#error-warning"></use></svg> '+ errorMessage +'</div>');
-    galleryDropzone.removeFile(file);
-  },
-
+  // error: function(file, errorMessage){
+  //   $('.gallery-alert').remove();
+  //   $('#gallery-alert').append('<div class="gallery-alert text-danger mb-3 w-100"><svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#error-warning"></use></svg> '+ errorMessage +'</div>');
+  //   galleryDropzone.removeFile(file);
+  // },
   success: function (file, response) {
     console.log(file);
     console.log(response);
   },
-
 });
