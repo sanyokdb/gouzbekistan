@@ -366,7 +366,7 @@
 
   <main class="main">
 
-    <div class="section">
+    <section class="section">
       <div class="container">
         <div class="d-flex justify-content-between mb-4">
           <ul class="pagination mb-0">
@@ -381,7 +381,6 @@
           </ul>
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addReviewModal">Добавить отзыв</button>
         </div>
-          
         <div class="review-card mb-4">
           <svg class="icon review-card__quotes">
             <use href="./assets/img/svgsprite/sprite.symbol.svg#double-quotes-r"></use>
@@ -558,7 +557,7 @@
             Великолепная экскурсия, все очень понравилось, спасибо большое менеджеру Муштарий за предложенную экскурсию и гиду Шухрату за интересное донесение информации. Кто планирует данную экскурсию - сразу рассчитывайте минимум на два дня, мы брали однодневную экскурсию, и со слов гида, не успели осмотреть...
           </div>
         </div>
-        <nav class="mt-5">
+        <nav class="mt-4">
           <ul class="pagination mb-0">
             <li class="page-item paper disabled"><a class="page-link" href="#" title="«">«</a></li>
             <li class="page-item active"><a class="page-link" href="#">1</a></li>
@@ -571,7 +570,6 @@
           </ul>
         </nav>
 
-
         <!-- Modal addReview -->
         <div class="modal fade" id="addReviewModal" tabindex="-1" aria-labelledby="addReviewModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
@@ -581,9 +579,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-		
                 <form action="" method="post">
-
                   <div class="rating rating-lg mb-3">
                     <input type="radio" name="rating" value="1" id="rating1">
                     <input type="radio" name="rating" value="2" id="rating2">
@@ -596,12 +592,10 @@
                     <label for="rating4" title="Хорошо">Хорошо</label>
                     <label for="rating5" title="Отлично">Отлично</label>
                   </div>
-
                   <div class="form-floating mb-3">
                     <textarea class="form-control" style="height: 100px" name="message" id="message" rows="3" placeholder="* Ваш отзыв" required></textarea>
                     <label for="message"><span class="text-danger">*</span> Ваш отзыв</label>
                   </div>
-
                   <div class="mb-3">
                     <a class="d-inline-flex flex-column align-items-center text-primary lh-1" id="add-photo" href="#!" role="button">
                       <svg class="icon fs-32"><use href="./assets/img/svgsprite/sprite.symbol.svg#image-add"></use></svg>
@@ -618,10 +612,9 @@
                   <div id="gallery-alert"></div>
                   <div id="gallery-files"></div>
                   <div id="gallery-images" class="gallery-images"></div>
-
                   <div class="row g-3">
                     <div class="col-md-auto">
-                      <label class="avatar-upload js-avatar-upload mb-3">
+                      <label class="avatar-upload js-avatar-upload">
                         <input class="avatar-upload__input js-avatar-upload__input" type="file" name="file" accept="image/*" />
                         <img class="avatar-upload__icon avatar-no" src="./assets/img/review/avatar-no.svg" alt="Загрузить фото">
                         <span class="avatar-upload__upload">Загрузить фото</span>
@@ -649,8 +642,7 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="text-end">
+                  <div class="text-end mt-4">
                     <button type="button" class="btn py-25 px-4 btn-outline-secondary" data-bs-dismiss="modal">Закрыть</button>
                     <button type="submit" class="btn py-25 px-4 btn-primary">Отправить отзыв</button>
                   </div>
@@ -663,7 +655,431 @@
 
 
       </div>
-    </div>
+    </section>
+
+    <section class="section-cta">
+      <div class="container section-cta__container">
+        <div class="section-cta__image">
+          <img class="section-cta__img" src="./assets/img/cta/girl.png" width="548" height="388" alt="girl">
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 offset-lg-6">
+            <div class="section-cta__content">
+              <h3 class="fs-1 fw-800 mb-4">Получить консультацию сейчас!</h3>
+              <p class="section-cta__text">Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt blandit interdum.</p>
+              <div class="section-cta__btns">
+                <a class="btn btn-pill btn-lg btn-outline-light" href="tel:+998908558586">
+                  <svg class="icon fs-20"><use href="./assets/img/svgsprite/sprite.symbol.svg#phone"></use></svg>
+                  +998 90 855 85 86
+                </a>
+                <button type="button" class="btn btn-pill btn-lg btn-custom3" data-bs-toggle="modal" data-bs-target="#modalOutprice">
+                  Узнать стоимость
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h3 class="fs-1 fw-800 mb-4 mb-md-5">Города Узбекистана</h3>
+        <div class="country-slider swiper swiper-nav2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="destination-card">
+                <a href="./country.html">
+                  <img class="destination-card__img" src="./assets/img/destination/fergana.jpg" alt="Фергана">
+                  <div class="destination-card__content">
+                    <h3 class="destination-card__title">Фергана</h3>
+                    <p class="destination-card__info">45 туров | 62 гостиницы</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="destination-card">
+                <a href="./country.html">
+                  <img class="destination-card__img" src="./assets/img/destination/samarkand.jpg" alt="Самарканд">
+                  <div class="destination-card__content">
+                    <h3 class="destination-card__title">Самарканд</h3>
+                    <p class="destination-card__info">21 туров | 14 гостиницы</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="destination-card">
+                <a href="./country.html">
+                  <img class="destination-card__img" src="./assets/img/destination/bukhara.jpg" alt="Бухара">
+                  <div class="destination-card__content">
+                    <h3 class="destination-card__title">Бухара</h3>
+                    <p class="destination-card__info">21 туров | 14 гостиницы</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="destination-card">
+                <a href="./country.html">
+                  <img class="destination-card__img" src="./assets/img/destination/khiva.jpg" alt="Хива">
+                  <div class="destination-card__content">
+                    <h3 class="destination-card__title">Хива</h3>
+                    <p class="destination-card__info">21 туров | 14 гостиницы</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="destination-card">
+                <a href="./country.html">
+                  <img class="destination-card__img" src="./assets/img/destination/tashkent.jpg" alt="Ташкент">
+                  <div class="destination-card__content">
+                    <h3 class="destination-card__title">Ташкент</h3>
+                    <p class="destination-card__info">21 туров | 14 гостиницы</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="destination-card">
+                <a href="./country.html">
+                  <img class="destination-card__img" src="./assets/img/destination/namangan.jpg" alt="Наманган">
+                  <div class="destination-card__content">
+                    <h3 class="destination-card__title">Наманган</h3>
+                    <p class="destination-card__info">21 туров | 14 гостиницы</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="destination-card">
+                <a href="./country.html">
+                  <img class="destination-card__img" src="./assets/img/destination/andijan.jpg" alt="Андижан">
+                  <div class="destination-card__content">
+                    <h3 class="destination-card__title">Андижан</h3>
+                    <p class="destination-card__info">21 туров | 14 гостиницы</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-bottom">
+      <div class="container">
+
+        <h3 class="fs-1 fw-800 mb-4 mb-md-5 text-center">Последние <span class="text-nowrap">Новости / Статьи</span></h3>
+        <div class="post-slider swiper swiper-shadow">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="post-card h-100">
+                <div class="post-card__image">
+                  <a href="./news-details.html">
+                    <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-1.jpg" width="800" height="600" alt="Заголовок">
+                  </a>
+                  <a class="post-card__type" href="./news.html">Новости</a>
+                </div>
+                <div class="post-card__content">
+                  <div class="post-card__meta">
+                    <span>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                    </span>
+                    <span>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                    </span>
+                  </div>
+                  <h4 class="post-card__title"><a href="./news-details.html">Туры из Узбекистана от местных жителей</a></h4>
+                  <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                  <a href="./news-details.html" class="text-link-1 fw-600 mt-auto">
+                    Читать далее
+                    <svg class="icon">
+                      <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="post-card h-100">
+                <div class="post-card__image">
+                  <a href="./post-detail.html">
+                    <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-2.jpg" width="800" height="600" alt="Заголовок">
+                  </a>
+                  <a class="post-card__type" href="./post.html">Статьи</a>
+                </div>
+                <div class="post-card__content">
+                  <div class="post-card__meta">
+                    <span>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                    </span>
+                    <span>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 145
+                    </span>
+                  </div>
+                  <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                  <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                  <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                    Читать далее
+                    <svg class="icon">
+                      <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="post-card h-100">
+                <div class="post-card__image">
+                  <a href="./news-details.html">
+                    <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-3.jpg" width="800" height="600" alt="Заголовок">
+                  </a>
+                  <a class="post-card__type" href="./news.html">Новости</a>
+                </div>
+                <div class="post-card__content">
+                  <div class="post-card__meta">
+                    <span>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                    </span>
+                    <span>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 21
+                    </span>
+                  </div>
+                  <h4 class="post-card__title"><a href="./news-details.html">Туры из Узбекистана от местных жителей</a></h4>
+                  <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                  <a href="./news-details.html" class="text-link-1 fw-600 mt-auto">
+                    Читать далее
+                    <svg class="icon">
+                      <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="post-card h-100">
+                <div class="post-card__image">
+                  <a href="./post-detail.html">
+                    <img class="post-card__img" loading="lazy" src="./assets/img/blog/img-2.jpg" width="800" height="600" alt="Заголовок">
+                  </a>
+                  <a class="post-card__type" href="./post.html">Статьи</a>
+                </div>
+                <div class="post-card__content">
+                  <div class="post-card__meta">
+                    <span>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg> 21 Апрель 2021
+                    </span>
+                    <span>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#eye"></use></svg> 86
+                    </span>
+                  </div>
+                  <h4 class="post-card__title"><a href="./post-detail.html">Туры из Узбекистана от местных жителей</a></h4>
+                  <p class="post-card__desc">На данном этапе, возможно, не нужны диаграммы и графики, чтобы знать, что за последние пару лет, особенно, покупки и продажи на...</p>
+                  <a href="./post-detail.html" class="text-link-1 fw-600 mt-auto">
+                    Читать далее
+                    <svg class="icon">
+                      <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-bottom">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h3 class="fs-3 fw-800 mb-4">Отзывы клиентов</h3>
+            <div class="review-slider2 swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <svg class="icon review-card__quotes">
+                      <use href="./assets/img/svgsprite/sprite.symbol.svg#double-quotes-r"></use>
+                    </svg>
+                    <div class="review-card__autor">
+                      <div class="review-card__avatar">
+                        <img src="./assets/img/review/img-1.jpg" width="80" height="80" alt="Екатерина Борщова">
+                      </div>
+                      <div class="review-card__header">
+                        <div class="review-card__name">Екатерина Борщова</div>
+                        <div class="review-card__meta">
+                          <span>
+                            <svg class="icon">
+                              <use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use>
+                            </svg>
+                            Швейцария
+                          </span>
+                          <span>
+                            <svg class="icon">
+                              <use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use>
+                            </svg>
+                            22 декабря 2022 г.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="review-card__rating rating rating-3">
+                      <span title="Ужасно">Ужасно</span>
+                      <span title="Плохо">Плохо</span>
+                      <span title="Удовлетворительно">Удовлетворительно</span>
+                      <span title="Хорошо">Хорошо</span>
+                      <span title="Отлично">Отлично</span>
+                    </div>
+                    <div class="review-card__desc">
+                      Великолепная экскурсия, все очень понравилось, спасибо большое менеджеру Муштарий за предложенную экскурсию и гиду Шухрату за интересное донесение информации. Кто планирует данную экскурсию - сразу рассчитывайте минимум на два дня, мы брали однодневную экскурсию, и со слов гида, не успели осмотреть...
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <svg class="icon review-card__quotes">
+                      <use href="./assets/img/svgsprite/sprite.symbol.svg#double-quotes-r"></use>
+                    </svg>
+                    <div class="review-card__autor">
+                      <div class="review-card__avatar">
+                        <img src="./assets/img/review/img-2.jpg" width="80" height="80" alt="Екатерина Борщова">
+                      </div>
+                      <div class="review-card__header">
+                        <div class="review-card__name">Екатерина Борщова</div>
+                        <div class="review-card__meta">
+                          <span>
+                            <svg class="icon">
+                              <use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use>
+                            </svg>
+                            Швейцария
+                          </span>
+                          <span>
+                            <svg class="icon">
+                              <use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use>
+                            </svg>
+                            22 декабря 2022 г.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="review-card__rating rating rating-4">
+                      <span title="Ужасно">Ужасно</span>
+                      <span title="Плохо">Плохо</span>
+                      <span title="Удовлетворительно">Удовлетворительно</span>
+                      <span title="Хорошо">Хорошо</span>
+                      <span title="Отлично">Отлично</span>
+                    </div>
+                    <div class="review-card__desc">
+                      Великолепная экскурсия, все очень понравилось, спасибо большое менеджеру Муштарий за предложенную экскурсию и гиду Шухрату за интересное донесение информации. Кто планирует данную экскурсию - сразу рассчитывайте минимум на два дня, мы брали однодневную экскурсию, и со слов гида, не успели осмотреть...
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <svg class="icon review-card__quotes">
+                      <use href="./assets/img/svgsprite/sprite.symbol.svg#double-quotes-r"></use>
+                    </svg>
+                    <div class="review-card__autor">
+                      <div class="review-card__avatar">
+                        <img src="./assets/img/review/img-3.jpg" width="80" height="80" alt="Екатерина Борщова">
+                      </div>
+                      <div class="review-card__header">
+                        <div class="review-card__name">Екатерина Борщова</div>
+                        <div class="review-card__meta">
+                          <span>
+                            <svg class="icon">
+                              <use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use>
+                            </svg>
+                            Швейцария
+                          </span>
+                          <span>
+                            <svg class="icon">
+                              <use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use>
+                            </svg>
+                            22 декабря 2022 г.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="review-card__rating rating rating-3">
+                      <span title="Ужасно">Ужасно</span>
+                      <span title="Плохо">Плохо</span>
+                      <span title="Удовлетворительно">Удовлетворительно</span>
+                      <span title="Хорошо">Хорошо</span>
+                      <span title="Отлично">Отлично</span>
+                    </div>
+                    <div class="review-card__desc">
+                      Великолепная экскурсия, все очень понравилось, спасибо большое менеджеру Муштарий за предложенную экскурсию и гиду Шухрату за интересное донесение информации. Кто планирует данную экскурсию - сразу рассчитывайте минимум на два дня, мы брали однодневную экскурсию, и со слов гида, не успели осмотреть...
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <svg class="icon review-card__quotes">
+                      <use href="./assets/img/svgsprite/sprite.symbol.svg#double-quotes-r"></use>
+                    </svg>
+                    <div class="review-card__autor">
+                      <div class="review-card__avatar">
+                        <img src="./assets/img/review/img-4.jpg" width="80" height="80" alt="Екатерина Борщова">
+                      </div>
+                      <div class="review-card__header">
+                        <div class="review-card__name">Екатерина Борщова</div>
+                        <div class="review-card__meta">
+                          <span>
+                            <svg class="icon">
+                              <use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use>
+                            </svg>
+                            Швейцария
+                          </span>
+                          <span>
+                            <svg class="icon">
+                              <use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use>
+                            </svg>
+                            22 декабря 2022 г.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="review-card__rating rating rating-3">
+                      <span title="Ужасно">Ужасно</span>
+                      <span title="Плохо">Плохо</span>
+                      <span title="Удовлетворительно">Удовлетворительно</span>
+                      <span title="Хорошо">Хорошо</span>
+                      <span title="Отлично">Отлично</span>
+                    </div>
+                    <div class="review-card__desc">
+                      Великолепная экскурсия, все очень понравилось, спасибо большое менеджеру Муштарий за предложенную экскурсию и гиду Шухрату за интересное донесение информации. Кто планирует данную экскурсию - сразу рассчитывайте минимум на два дня, мы брали однодневную экскурсию, и со слов гида, не успели осмотреть...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="./reviews.html" class="text-link-1 fw-600 mt-2">
+              Подробнее
+              <svg class="icon">
+                <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="fs-3 fw-800 mb-4">Фотогалерея Узбекистана</h3>
+            <img class="img-fluid" src="./assets/img/tours/img-1.jpg" alt="title">
+            <a href="./reviews.html" class="text-link-1 fw-600 mt-2">
+              Подробнее
+              <svg class="icon">
+                <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -849,6 +1265,50 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="scrollup__icon" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
     </svg>
+  </div>
+
+  <!-- Modal OutPrice -->
+  <div class="modal fade" id="modalOutprice" tabindex="-1" aria-labelledby="modalOutpriceLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalOutpriceLabel">Узнать стоимость</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Иван Иванов" required="" value="">
+              <label for="name"><span class="text-danger">*</span> Ваше имя</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="+998 00 000-00-00" value="">
+              <label for="phone">Телефон</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="" value="">
+              <label for="email">E-mail</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn py-25 btn-outline-secondary flex-grow-1" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn py-25 btn-primary flex-grow-1">Отправить</button>
+          <div class="text-success mt-3 w-100 d-none">
+            <svg class="icon">
+              <use href="./assets/img/svgsprite/sprite.symbol.svg#checkbox-circle"></use>
+            </svg>
+            Спасибо за Ваше сообщение. Оно успешно отправлено.
+          </div>
+          <div class="text-danger mt-3 w-100 d-none">
+            <svg class="icon">
+              <use href="./assets/img/svgsprite/sprite.symbol.svg#error-warning"></use>
+            </svg>
+            При отправке сообщения произошла ошибка. Пожалуйста, попробуйте ещё раз позже.
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="./assets/js/jquery.min.js"></script>
