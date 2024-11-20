@@ -117,7 +117,7 @@ const review2 = new Swiper(".review-slider2", {
 const country = new Swiper(".country-slider", {
   speed: 600,
   slidesPerView: 1,
-  spaceBetween: 15,
+  spaceBetween: 4,
   // centeredSlides: true,
   // loop: true,
   autoplay: {
@@ -131,15 +131,14 @@ const country = new Swiper(".country-slider", {
   breakpoints: {
     478: {
       slidesPerView: 2,
-      spaceBetween: 15,
     },
     992: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      // spaceBetween: 20,
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 24,
+      // spaceBetween: 24,
     },
   },
 });
