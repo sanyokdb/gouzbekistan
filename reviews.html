@@ -12,7 +12,7 @@
   <link href="./assets/css/fancybox.min.css" rel="stylesheet">
   <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet">
   <link href="./assets/css/dropzone.min.css" rel="stylesheet">
-  <link href="./assets/css/style.min.css" rel="stylesheet">
+  <link href="./assets/css/style.min.css" rel="stylesheet">  
 </head>
 <body>
 
@@ -667,25 +667,21 @@
     </section>
 
     <section class="section-cta">
-      <div class="container section-cta__container">
-        <div class="section-cta__image">
-          <img class="section-cta__img" src="./assets/img/cta/girl.png" width="548" height="388" alt="girl">
-        </div>
-        <div class="row align-items-center">
-          <div class="col-lg-6 offset-lg-6">
-            <div class="section-cta__content">
-              <h3 class="fs-1 fw-800 mb-4">Получить консультацию сейчас!</h3>
-              <p class="section-cta__text">Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt blandit interdum.</p>
-              <div class="section-cta__btns">
-                <a class="btn btn-pill btn-lg btn-outline-light" href="tel:+998908558586">
+      <div class="container position-relative">
+        <img class="position-absolute bottom-0 d-none d-lg-block" src="./assets/img/cta/girl.png" width="548" height="388" alt="girl">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-6 py-6 position-relative">
+              <h3 class="fs-2 fw-800 mb-4 text-white">Получить консультацию сейчас!</h3>
+              <p class="fs-18 mb-5 text-white">Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt blandit interdum.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-pill btn-lg btn-outline-light border-2" href="tel:+998908558586">
                   <svg class="icon fs-20"><use href="./assets/img/svgsprite/sprite.symbol.svg#phone"></use></svg>
                   +998 90 855 85 86
                 </a>
-                <button type="button" class="btn btn-pill btn-lg btn-custom3" data-bs-toggle="modal" data-bs-target="#modalOutprice">
+                <button type="button" class="btn btn-pill btn-lg btn-custom3 border-2" data-bs-toggle="modal" data-bs-target="#modalOutprice">
                   Узнать стоимость
                 </button>
               </div>
-            </div>
           </div>
         </div>
       </div>
