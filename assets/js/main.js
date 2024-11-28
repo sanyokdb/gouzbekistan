@@ -110,7 +110,7 @@ const review2 = new Swiper(".review-slider2", {
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
-  }
+  },
 });
 
 // country-slider
@@ -125,8 +125,8 @@ const country = new Swiper(".country-slider", {
     disableOnInteraction: false,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     478: {
@@ -172,38 +172,140 @@ const postSlider = new Swiper(".post-slider", {
   },
 });
 
+// package-image-slider
+const packageImageThumb = new Swiper(".package-image-thumb", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  direction: "horizontal",
+  breakpoints: {
+    768: {
+      direction: "vertical",
+      slidesPerView: 5,
+      centeredSlides: false,
+    },
+  },
+});
+const packageImageMain = new Swiper(".package-image-main", {
+  spaceBetween: 10,
+  effect: "fade",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: packageImageThumb,
+  },
+});
+
 // Fancybox
 Fancybox.bind("[data-fancybox]", {
   dragToClose: false,
 });
 
+// PhotoSubmission
+class PhotoSubmission {
+  constructor() {
+    const inputs = document.querySelectorAll(".js-avatar-upload__input");
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].addEventListener("change", this.uploadImage);
+    }
+  }
+  uploadImage(e) {
+    const fileInput = e.target;
+    const uploadBtn = fileInput.parentNode;
+    const deleteBtn = uploadBtn.childNodes[7];
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      uploadBtn.setAttribute(
+        "style",
+        `background-image: url('${e.target.result}');`
+      );
+      uploadBtn.classList.add("avatar-upload--image");
+      fileInput.setAttribute("style", "display:none;");
+    };
+    reader.readAsDataURL(e.target.files[0]);
+    deleteBtn.addEventListener("click", () => {
+      uploadBtn.removeAttribute("style");
+      uploadBtn.classList.remove("avatar-upload--image");
+      setTimeout(() => {
+        fileInput.removeAttribute("style", "display:none;");
+      }, 200);
+    });
+  }
+}
+new PhotoSubmission();
+
+
 // Dropzone
 $("#add-photo").on("click", function () {
   $("#gallery-upload").slideToggle(100);
 });
-let galleryAlert = $("#gallery-alert");
-let galleryFiles = $("#gallery-files");
-let galleryImages = $("#gallery-images");
-let galleryDropzone = new Dropzone("div#gallery-upload", {
-  url: "/assets/img/review/thumbs",
-  paramName: "thumbs",
-  maxFiles: 4,
-  maxFilesize: 1,
-  acceptedFiles: ".jpg, .png",
-  dictFileTooBig: "Максимальный размер файла - 1 Мб",
-  dictMaxFilesExceeded: "Вы не можете загружать больше файлов",
-  dictInvalidFileType: "К загрузке разрешены разрешения: .jpg, .png",
-  dictRemoveFile: '<svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#delete"></use></svg>',
-  dictCancelUpload: '<svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#delete"></use></svg>',
-  addRemoveLinks: true,
-  parallelUploads: 1,
-  // error: function(file, errorMessage){
-  //   $('.gallery-alert').remove();
-  //   $('#gallery-alert').append('<div class="gallery-alert text-danger mb-3 w-100"><svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#error-warning"></use></svg> '+ errorMessage +'</div>');
-  //   galleryDropzone.removeFile(file);
-  // },
-  success: function (file, response) {
-    console.log(file);
-    console.log(response);
-  },
+// var galleryAlert = $("#gallery-alert");
+// var galleryFiles = $("#gallery-files");
+// var galleryImages = $("#gallery-images");
+var galleryAlert = document.querySelector("#gallery-alert");
+var galleryFiles = document.querySelector("#gallery-files");
+var galleryImages = document.querySelector("#gallery-upload");
+if (galleryImages) {
+  var galleryDropzone = new Dropzone("#gallery-upload", {
+    url: "/assets/img/review/thumbs",
+    paramName: "thumbs",
+    maxFiles: 4,
+    maxFilesize: 1,
+    acceptedFiles: ".jpg, .png",
+    dictFileTooBig: "Максимальный размер файла - 1 Мб",
+    dictMaxFilesExceeded: "Вы не можете загружать больше файлов",
+    dictInvalidFileType: "К загрузке разрешены разрешения: .jpg, .png",
+    dictRemoveFile:
+      '<svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#delete"></use></svg>',
+    dictCancelUpload:
+      '<svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#delete"></use></svg>',
+    addRemoveLinks: true,
+    parallelUploads: 1,
+    // error: function(file, errorMessage){
+    //   $('.gallery-alert').remove();
+    //   $('#gallery-alert').append('<div class="gallery-alert text-danger mb-3 w-100"><svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#error-warning"></use></svg> '+ errorMessage +'</div>');
+    //   galleryDropzone.removeFile(file);
+    // },
+    success: function (file, response) {
+      console.log(file);
+      console.log(response);
+    },
+  });
+}
+
+// Range Slider
+const targets = document.querySelectorAll(".js-price-rangeSlider");
+
+targets.forEach((el) => {
+  const slider = el.querySelector(".js-slider");
+
+  noUiSlider.create(slider, {
+    start: [0, 2000],
+    step: 100,
+    connect: true,
+    range: {
+      min: 0,
+      max: 2000,
+    },
+    format: {
+      from: function (value) {
+        return parseInt(value);
+      },
+      to: function (value) {
+        return parseInt(value);
+      },
+    },
+  });
+
+  const snapValues = [
+    el.querySelector(".js-price-min"),
+    el.querySelector(".js-price-max"),
+  ];
+
+  slider.noUiSlider.on("update", function (values, handle) {
+    snapValues[handle].innerHTML = values[handle];
+  });
 });
