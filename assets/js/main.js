@@ -228,6 +228,34 @@ const packageImageMain = new Swiper(".package-image-main", {
   },
 });
 
+// hotels2-slider
+const hotels2Slider = new Swiper(".hotels2-slider", {
+  slidesPerView: 1,
+  speed: 600,
+  autoHeight: true,
+  // loop: true,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+
 // Fancybox
 Fancybox.bind("[data-fancybox]", {
   dragToClose: false,
@@ -266,6 +294,31 @@ class PhotoSubmission {
 }
 new PhotoSubmission();
 
+// Smooth scrolling
+$('a.smooth-scroll[href*="#"]').on("click", function (e) {
+  $("html,body").animate(
+    {
+      scrollTop: $($(this).attr("href")).offset().top - 86,
+    },
+    500
+  );
+  e.preventDefault();
+});
+
+// Spiner
+$("input[type='number']").inputSpinner({
+  buttonsClass: "btn-outline-primary",
+  groupClass: "inputSpiner-1",
+});
+
+
+// Datepicker
+new AirDatepicker(".js-dateRange", {
+  range: true,
+  multipleDatesSeparator: " - ",
+  grid: 2,
+  calendars: 2,
+});
 
 // Dropzone
 $("#add-photo").on("click", function () {
