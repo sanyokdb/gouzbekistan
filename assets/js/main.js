@@ -228,6 +228,19 @@ const packageImageMain = new Swiper(".package-image-main", {
   },
 });
 
+// 
+const hotelImageMain = new Swiper(".hotel-image-main", {
+  spaceBetween: 10,
+  effect: "fade",
+  autoplay: {
+    delay: 4500,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+});
+
 // hotels2-slider
 const hotels2Slider = new Swiper(".hotels2-slider", {
   slidesPerView: 1,
