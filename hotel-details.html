@@ -12,6 +12,7 @@
   <link href="./assets/css/fancybox.min.css" rel="stylesheet">
   <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet">
   <link href="./assets/css/dropzone.min.css" rel="stylesheet">
+  <link href="./assets/css/air-datepicker.min.css" rel="stylesheet">
   <link href="./assets/css/style.min.css" rel="stylesheet">
 </head>
 <body>
@@ -211,7 +212,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown dropdown-mega">
-                <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                   Гостиницы
                 </a>
                 <div class="dropdown-menu">
@@ -367,442 +368,404 @@
     <div class="container">
       <ol class="breadcrumb page-header__breadcrumb">
         <li class="breadcrumb-item"><a href="./index.html">Главная</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Гостиницы</li>
+        <li class="breadcrumb-item"><a href="./hotels.html">Гостиницы</a></li>
+        <li class="breadcrumb-item"><a href="./hotels-bukhara.html">Гостиницы в Бухаре</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Sahid Zarafshon Hotel</li>
       </ol>
-      <h1 class="page-header__title">Гостиницы</h1>
+      <h1 class="page-header__title">Sahid Zarafshon Hotel</h1>
     </div>
   </section>
 
   <main class="main">
+
     <section class="section">
       <div class="container">
 
-        <div class="row g-2 g-md-4 row-cols-1 row-cols-sm-2 row-cols-xl-3">
-          <div class="col">
-            <article class="hotel-card h-100">
-              <div class="hotel-card__image">
-                <a href="./hotel-details.html">
-                  <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-1.jpg" width="800" height="600" alt="Заголовок">
-                  <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-1-2.jpg" width="800" height="600" alt="Заголовок">
-                  <div class="hotel-card__star">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                  </div>
-                  <div class="hotel-card__discount"><span>от</span> -21%</div>
-                  <div class="hotel-card__price">от $45</div>
-                </a>
-              </div>
-              <div class="hotel-card__content">
-                <h4 class="hotel-card__title"><a href="./hotel-details.html">Sahid Zarafshon Hotel</a></h4>
-                <p class="hotel-card__location">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
-                  Бухара, Бахауддин Накшбанд, 11
-                </p>
-                <div class="hotel-card__services">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#lift"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#velvet"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#mobile"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#key-card"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#hairdryer"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#washing-machine"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
+        <div class="row g-4">
+          <div class="col-lg-6">
+  
+            <!-- Hotel Image -->
+            <div class="hotel-image mb-4">
+              <!-- Код для одной картинки
+              <div class="package-image-single"><img src="./assets/img/hotels/img-1.jpg" alt="image"></div> -->
+              <div class="hotel-image-main swiper swiper-nav2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/img/hotels/img-1.jpg" alt="image"></div>
+                  <div class="swiper-slide"><img src="./assets/img/hotels/img-1-2.jpg" alt="image"></div>
+                  <div class="swiper-slide"><img src="./assets/img/hotels/img-2.jpg" alt="image"></div>
+                  <div class="swiper-slide"><img src="./assets/img/hotels/img-3.jpg" alt="image"></div>
+                  <div class="swiper-slide"><img src="./assets/img/hotels/img-4.jpg" alt="image"></div>
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
-            </article>
+            </div>
+
+            <h5 class="fw-700">Расположение гостиницы на карте</h5>
+  
           </div>
-          <div class="col">
-            <article class="hotel-card h-100">
-              <div class="hotel-card__image">
-                <a href="./hotel-details.html">
-                  <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-2.jpg" width="800" height="600" alt="Заголовок">
-                  <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-2-2.jpg" width="800" height="600" alt="Заголовок">
-                  <div class="hotel-card__star">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                  </div>
-                  <div class="hotel-card__discount"><span>от</span> -21%</div>
-                  <div class="hotel-card__price">от $45</div>
-                </a>
+          <div class="col-lg-6">
+
+            <div class="d-flex flex-wrap gap-2 mb-2">
+              <h3 class="fs-26 fw-800 mb-0">Sahid Zarafshon Hotel</h3>
+              <div class="d-flex text-warning">
+                <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
               </div>
-              <div class="hotel-card__content">
-                <h4 class="hotel-card__title"><a href="./hotel-details.html">Отель Ichan Qal'a</a></h4>
-                <p class="hotel-card__location">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
-                  Ташкент, ул Тафаккур 24
-                </p>
-                <div class="hotel-card__services">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bellboy"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bell-ring"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#parking"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#table"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#hairdryer"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col">
-            <article class="hotel-card h-100">
-              <div class="hotel-card__image">
-                <a href="./hotel-details.html">
-                  <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-3.jpg" width="800" height="600" alt="Заголовок">
-                  <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-3-2.jpg" width="800" height="600" alt="Заголовок">
-                  <div class="hotel-card__star">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                  </div>
-                  <div class="hotel-card__discount"><span>от</span> -21%</div>
-                  <div class="hotel-card__price">от $45</div>
-                </a>
-              </div>
-              <div class="hotel-card__content">
-                <h4 class="hotel-card__title"><a href="./hotel-details.html">Khiva Residence Hotel</a></h4>
-                <p class="hotel-card__location">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
-                  Хива, Янги турмуш ул Нажмиддин Кубро
-                </p>
-                <div class="hotel-card__services">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bath"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#armchair"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#no-smoke"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#minibar"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#luggage"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col">
-            <article class="hotel-card h-100">
-              <div class="hotel-card__image">
-                <a href="./hotel-details.html">
-                  <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-4.jpg" width="800" height="600" alt="Заголовок">
-                  <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-4-2.jpg" width="800" height="600" alt="Заголовок">
-                  <div class="hotel-card__star">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                  </div>
-                  <div class="hotel-card__discount"><span>от</span> -21%</div>
-                  <div class="hotel-card__price">от $45</div>
-                </a>
-              </div>
-              <div class="hotel-card__content">
-                <h4 class="hotel-card__title"><a href="./hotel-details.html">Grand Plaza Hotel Samarkand</a></h4>
-                <p class="hotel-card__location">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
-                  Самарканд, Университет хиёбони 7
-                </p>
-                <div class="hotel-card__services">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bath"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#armchair"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#no-smoke"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#minibar"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#luggage"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col">
-            <article class="hotel-card h-100">
-              <div class="hotel-card__image">
-                <a href="./hotel-details.html">
-                  <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-5.jpg" width="800" height="600" alt="Заголовок">
-                  <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-5-2.jpg" width="800" height="600" alt="Заголовок">
-                  <div class="hotel-card__star">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                  </div>
-                  <div class="hotel-card__discount"><span>от</span> -21%</div>
-                  <div class="hotel-card__price">от $45</div>
-                </a>
-              </div>
-              <div class="hotel-card__content">
-                <h4 class="hotel-card__title"><a href="./hotel-details.html">Rangrez Hotel</a></h4>
-                <p class="hotel-card__location">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
-                  Бухара, Бахауддин Накшбанд, 26
-                </p>
-                <div class="hotel-card__services">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#gym"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#alarm-clock"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#location"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#reception"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#door-key"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bellboy"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col">
-            <article class="hotel-card h-100">
-              <div class="hotel-card__image">
-                <a href="./hotel-details.html">
-                  <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-6.jpg" width="800" height="600" alt="Заголовок">
-                  <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-6-2.jpg" width="800" height="600" alt="Заголовок">
-                  <div class="hotel-card__star">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
-                  </div>
-                  <div class="hotel-card__discount"><span>от</span> -21%</div>
-                  <div class="hotel-card__price">от $45</div>
-                </a>
-              </div>
-              <div class="hotel-card__content">
-                <h4 class="hotel-card__title"><a href="./hotel-details.html">Navruz Hotel Tashkent</a></h4>
-                <p class="hotel-card__location">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
-                  Ташкент, ул Шивли 6-8
-                </p>
-                <div class="hotel-card__services">
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#toothbrush"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wardrobe"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#tv"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#cocktail"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#stairs"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
-                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
-                </div>
-              </div>
-            </article>
+            </div>
+
+            <div class="mb-4">
+              <span class="d-flex align-items-center gap-1">
+                <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
+                <span class="fs-15">Бухара, Бахауддин Накшбанд, 11</span>
+              </span>
+              <a class="text-link-1 fs-15 fw-500" href="#!">Показать на карте</a>
+            </div>
+
+            <div class="hotel-description mt-4">
+              <p>В первой подборке мы освещаем древний период с акцентом на незападные религии и межкультурное взаимодействие на Шелковом пути. В этот период земля Узбекистана сегодня называлась Согдианой, по имени знаменитых согдийских купцов. В первом выборе мы освещаем древний период, уделяя особое внимание незападным религиям и межкультурному взаимодействию по Шелковому пути.</p>
+              <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Решила залетают букв снова приставка? Семантика, до всеми. Океана о, оксмокс свою, приставка запятой собрал.</p>
+            </div>
+
+            <div class="mt-4">
+              <h5 class="fw-700">Условия</h5>
+              <p>
+                <strong>Заезд:</strong> с 14:00<br>
+                <strong>Выезд:</strong> до 14:00
+              </p>
+              <p>
+                Размещение с домашними животными не предусмотрено.<br>
+                Бесплатная отмена бронирования за 3дня до прыбития. 
+              </p>
+            </div>
+  
           </div>
         </div>
-        <nav class="mt-5">
-          <ul class="pagination mb-0">
-            <li class="page-item paper disabled"><a class="page-link" href="#" title="«">«</a></li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
-            <li class="page-item"><a class="page-link" href="#">12</a></li>
-            <li class="page-item paper page-paper"><a class="page-link" href="#">1 / 12</a></li>
-            <li class="page-item paper"><a class="page-link" href="#" title="»">»</a></li>
-          </ul>
-        </nav>
+
+        
+      </div>
+    </section>
+
+    <section class="section-bottom">
+      <div class="container">
+        <h3 class="fs-3 fw-800 text-center mb-4">Услуги</h3>
+        <ul class="list-reset hotel-services">
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Мини маркет</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Аптечка</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Номера для некурящих</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-taxi"></use></svg>
+            <h6>Заказ такси</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lamp"></use></svg>
+            <h6>Общая кухня</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Огнетушители</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Оплата Виза карта</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Услуги глажки</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Ресторан</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Хранение багажа</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Обмен валюты</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Оплата Мастеркард</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Wi-Fi</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Прачечная (платно)</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-broom"></use></svg>
+            <h6>Ежедневная уборка</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Мечеть/Церковь/Храм</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Круглостучная охрана</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-cctv"></use></svg>
+            <h6>Видеонаблюдение снаружи здания</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Вызов скорой медицинской помощи</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Датчики дыма</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Банкомат на територии отеля</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Доставка продуктов (платно)</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <h6>Прямая транслация спортивных матчей</h6>
+          </li>
+          <li>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-reception"></use></svg>
+            <h6>Круглостучная стойка регистрации</h6>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="section-bottom">
+      <div class="container">
+        <h3 class="fs-2 fw-800 mb-4">Похожие гостиницы</h3>
+        <div class="package-slider swiper swiper-shadow">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="hotel-card h-100">
+                <div class="hotel-card__image">
+                  <a href="./hotel-details.html">
+                    <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-1.jpg" width="800" height="600" alt="Заголовок">
+                    <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-1-2.jpg" width="800" height="600" alt="Заголовок">
+                    <div class="hotel-card__star">
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                    </div>
+                    <div class="hotel-card__discount"><span>от</span> -21%</div>
+                    <div class="hotel-card__price">от $45</div>
+                  </a>
+                </div>
+                <div class="hotel-card__content">
+                  <h4 class="hotel-card__title"><a href="./hotel-details.html">Sahid Zarafshon Hotel</a></h4>
+                  <p class="hotel-card__location">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
+                    Бухара, Бахауддин Накшбанд, 11
+                  </p>
+                  <div class="hotel-card__services">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#lift"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#velvet"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#mobile"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#key-card"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#hairdryer"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#washing-machine"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="hotel-card h-100">
+                <div class="hotel-card__image">
+                  <a href="./hotel-details.html">
+                    <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-2.jpg" width="800" height="600" alt="Заголовок">
+                    <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-2-2.jpg" width="800" height="600" alt="Заголовок">
+                    <div class="hotel-card__star">
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                    </div>
+                    <div class="hotel-card__discount"><span>от</span> -21%</div>
+                    <div class="hotel-card__price">от $45</div>
+                  </a>
+                </div>
+                <div class="hotel-card__content">
+                  <h4 class="hotel-card__title"><a href="./hotel-details.html">Отель Ichan Qal'a</a></h4>
+                  <p class="hotel-card__location">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
+                    Ташкент, ул Тафаккур 24
+                  </p>
+                  <div class="hotel-card__services">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bellboy"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bell-ring"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#parking"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#table"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#hairdryer"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="hotel-card h-100">
+                <div class="hotel-card__image">
+                  <a href="./hotel-details.html">
+                    <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-3.jpg" width="800" height="600" alt="Заголовок">
+                    <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-3-2.jpg" width="800" height="600" alt="Заголовок">
+                    <div class="hotel-card__star">
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                    </div>
+                    <div class="hotel-card__discount"><span>от</span> -21%</div>
+                    <div class="hotel-card__price">от $45</div>
+                  </a>
+                </div>
+                <div class="hotel-card__content">
+                  <h4 class="hotel-card__title"><a href="./hotel-details.html">Khiva Residence Hotel</a></h4>
+                  <p class="hotel-card__location">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
+                    Хива, Янги турмуш ул Нажмиддин Кубро
+                  </p>
+                  <div class="hotel-card__services">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bath"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#armchair"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#no-smoke"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#minibar"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#luggage"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="hotel-card h-100">
+                <div class="hotel-card__image">
+                  <a href="./hotel-details.html">
+                    <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-4.jpg" width="800" height="600" alt="Заголовок">
+                    <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-4-2.jpg" width="800" height="600" alt="Заголовок">
+                    <div class="hotel-card__star">
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                    </div>
+                    <div class="hotel-card__discount"><span>от</span> -21%</div>
+                    <div class="hotel-card__price">от $45</div>
+                  </a>
+                </div>
+                <div class="hotel-card__content">
+                  <h4 class="hotel-card__title"><a href="./hotel-details.html">Grand Plaza Hotel Samarkand</a></h4>
+                  <p class="hotel-card__location">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
+                    Самарканд, Университет хиёбони 7
+                  </p>
+                  <div class="hotel-card__services">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bath"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#armchair"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#no-smoke"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#minibar"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#luggage"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="hotel-card h-100">
+                <div class="hotel-card__image">
+                  <a href="./hotel-details.html">
+                    <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-5.jpg" width="800" height="600" alt="Заголовок">
+                    <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-5-2.jpg" width="800" height="600" alt="Заголовок">
+                    <div class="hotel-card__star">
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                    </div>
+                    <div class="hotel-card__discount"><span>от</span> -21%</div>
+                    <div class="hotel-card__price">от $45</div>
+                  </a>
+                </div>
+                <div class="hotel-card__content">
+                  <h4 class="hotel-card__title"><a href="./hotel-details.html">Rangrez Hotel</a></h4>
+                  <p class="hotel-card__location">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
+                    Бухара, Бахауддин Накшбанд, 26
+                  </p>
+                  <div class="hotel-card__services">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#gym"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#alarm-clock"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#location"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#reception"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#door-key"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bellboy"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="hotel-card h-100">
+                <div class="hotel-card__image">
+                  <a href="./hotel-details.html">
+                    <img class="hotel-card__img" loading="lazy" src="./assets/img/hotels/img-6.jpg" width="800" height="600" alt="Заголовок">
+                    <img class="hotel-card__img-swap" loading="lazy" src="./assets/img/hotels/img-6-2.jpg" width="800" height="600" alt="Заголовок">
+                    <div class="hotel-card__star">
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                      <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#star-fill"></use></svg>
+                    </div>
+                    <div class="hotel-card__discount"><span>от</span> -21%</div>
+                    <div class="hotel-card__price">от $45</div>
+                  </a>
+                </div>
+                <div class="hotel-card__content">
+                  <h4 class="hotel-card__title"><a href="./hotel-details.html">Navruz Hotel Tashkent</a></h4>
+                  <p class="hotel-card__location">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
+                    Ташкент, ул Шивли 6-8
+                  </p>
+                  <div class="hotel-card__services">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#toothbrush"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wardrobe"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#tv"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#cocktail"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#stairs"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-pagination position-static mt-4"></div>
+        </div>
 
       </div>
     </section>
-    <section class="section-bottom">
-      <div class="container">
-        <p>Вы решили посетить одну из жемчужин Востока с деловой или туристической поездкой? Тогда просмотрите <a href="./hotels.html"><strong>список гостиниц Узбекистана</strong></a>, представленный на нашем сайте. Это позволит забронировать желаемый номер удачно.</p>
-        <p><a href="./hotels-bukhara.html"><strong>Гостиницы в Бухаре</strong></a> предлагают широкий выбор: элитные гостиницы, респектабельные бизнес-отели, уютные гостевые дома.</p>
-        <h3 class="fs-3 fw-800 mt-5">История Узбекистана</h3>
-        <p>На этой странице представлен <a href="./hotels-bukhara.html"><strong>список гостиниц Бухары</strong></a>, достойный вашего внимания. Выбирайте отель в центре города или исторических его частях, в тихих уютных кварталах или вблизи живописных природных уголков и наслаждайтесь прелестями Востока!</p>
-        <p>Здесь собраны <a href="./hotels-bukhara.html"><strong>все гостиницы Бухары</strong></a>, с актуальной информацией, чтобы ваши поиски не превратились в непосильную задачу.</p>
-      </div>
-    </section>
-    <section class="section-bottom">
-      <div class="container">
-        <div class="row gy-5">
-          <div class="col-xl-4">
-            <h3 class="fs-3 fw-800 mb-4">Отзывы клиентов</h3>
-            <div class="review-slider2 swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="review-card">
-                    <svg class="icon review-card__quotes">
-                      <use href="./assets/img/svgsprite/sprite.symbol.svg#double-quotes-r"></use>
-                    </svg>
-                    <div class="review-card__autor">
-                      <div class="review-card__avatar">
-                        <img src="./assets/img/review/img-1.jpg" width="80" height="80" alt="Екатерина Борщова">
-                      </div>
-                      <div class="review-card__header">
-                        <div class="review-card__name">Екатерина Борщова</div>
-                        <div class="review-card__meta">
-                          <span>
-                            <svg class="icon">
-                              <use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use>
-                            </svg>
-                            Швейцария
-                          </span>
-                          <span>
-                            <svg class="icon">
-                              <use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use>
-                            </svg>
-                            22 декабря 2022 г.
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="review-card__rating rating rating-3">
-                      <span title="Ужасно">Ужасно</span>
-                      <span title="Плохо">Плохо</span>
-                      <span title="Удовлетворительно">Удовлетворительно</span>
-                      <span title="Хорошо">Хорошо</span>
-                      <span title="Отлично">Отлично</span>
-                    </div>
-                    <div class="review-card__desc">
-                      Великолепная экскурсия, все очень понравилось, спасибо большое менеджеру Муштарий за предложенную экскурсию и гиду Шухрату за интересное донесение информации. Кто планирует данную экскурсию - сразу рассчитывайте минимум на два дня, мы брали однодневную экскурсию, и со слов гида, не успели осмотреть...
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="review-card">
-                    <svg class="icon review-card__quotes">
-                      <use href="./assets/img/svgsprite/sprite.symbol.svg#double-quotes-r"></use>
-                    </svg>
-                    <div class="review-card__autor">
-                      <div class="review-card__avatar">
-                        <img src="./assets/img/review/img-2.jpg" width="80" height="80" alt="Екатерина Борщова">
-                      </div>
-                      <div class="review-card__header">
-                        <div class="review-card__name">Екатерина Борщова</div>
-                        <div class="review-card__meta">
-                          <span>
-                            <svg class="icon">
-                              <use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use>
-                            </svg>
-                            Швейцария
-                          </span>
-                          <span>
-                            <svg class="icon">
-                              <use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use>
-                            </svg>
-                            22 декабря 2022 г.
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="review-card__rating rating rating-4">
-                      <span title="Ужасно">Ужасно</span>
-                      <span title="Плохо">Плохо</span>
-                      <span title="Удовлетворительно">Удовлетворительно</span>
-                      <span title="Хорошо">Хорошо</span>
-                      <span title="Отлично">Отлично</span>
-                    </div>
-                    <div class="review-card__desc">
-                      Великолепная экскурсия, все очень понравилось, спасибо большое менеджеру Муштарий за предложенную экскурсию и гиду Шухрату за интересное донесение информации. Кто планирует данную экскурсию - сразу рассчитывайте минимум на два дня, мы брали однодневную экскурсию, и со слов гида, не успели осмотреть...
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="review-card">
-                    <svg class="icon review-card__quotes">
-                      <use href="./assets/img/svgsprite/sprite.symbol.svg#double-quotes-r"></use>
-                    </svg>
-                    <div class="review-card__autor">
-                      <div class="review-card__avatar">
-                        <img src="./assets/img/review/img-3.jpg" width="80" height="80" alt="Екатерина Борщова">
-                      </div>
-                      <div class="review-card__header">
-                        <div class="review-card__name">Екатерина Борщова</div>
-                        <div class="review-card__meta">
-                          <span>
-                            <svg class="icon">
-                              <use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use>
-                            </svg>
-                            Швейцария
-                          </span>
-                          <span>
-                            <svg class="icon">
-                              <use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use>
-                            </svg>
-                            22 декабря 2022 г.
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="review-card__rating rating rating-3">
-                      <span title="Ужасно">Ужасно</span>
-                      <span title="Плохо">Плохо</span>
-                      <span title="Удовлетворительно">Удовлетворительно</span>
-                      <span title="Хорошо">Хорошо</span>
-                      <span title="Отлично">Отлично</span>
-                    </div>
-                    <div class="review-card__desc">
-                      Великолепная экскурсия, все очень понравилось, спасибо большое менеджеру Муштарий за предложенную экскурсию и гиду Шухрату за интересное донесение информации. Кто планирует данную экскурсию - сразу рассчитывайте минимум на два дня, мы брали однодневную экскурсию, и со слов гида, не успели осмотреть...
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="review-card">
-                    <svg class="icon review-card__quotes">
-                      <use href="./assets/img/svgsprite/sprite.symbol.svg#double-quotes-r"></use>
-                    </svg>
-                    <div class="review-card__autor">
-                      <div class="review-card__avatar">
-                        <img src="./assets/img/review/img-4.jpg" width="80" height="80" alt="Екатерина Борщова">
-                      </div>
-                      <div class="review-card__header">
-                        <div class="review-card__name">Екатерина Борщова</div>
-                        <div class="review-card__meta">
-                          <span>
-                            <svg class="icon">
-                              <use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use>
-                            </svg>
-                            Швейцария
-                          </span>
-                          <span>
-                            <svg class="icon">
-                              <use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use>
-                            </svg>
-                            22 декабря 2022 г.
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="review-card__rating rating rating-3">
-                      <span title="Ужасно">Ужасно</span>
-                      <span title="Плохо">Плохо</span>
-                      <span title="Удовлетворительно">Удовлетворительно</span>
-                      <span title="Хорошо">Хорошо</span>
-                      <span title="Отлично">Отлично</span>
-                    </div>
-                    <div class="review-card__desc">
-                      Великолепная экскурсия, все очень понравилось, спасибо большое менеджеру Муштарий за предложенную экскурсию и гиду Шухрату за интересное донесение информации. Кто планирует данную экскурсию - сразу рассчитывайте минимум на два дня, мы брали однодневную экскурсию, и со слов гида, не успели осмотреть...
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="./reviews.html" class="text-link-1 fw-600 mt-2">
-              Подробнее
-              <svg class="icon">
-                <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <h3 class="fs-3 fw-800 mb-4">Фотогалерея Узбекистана</h3>
-            <a class="image-link" href="./gallery.html"><img loading="lazy" src="./assets/img/tours/img-1.jpg" width="800" height="600" alt="title"></a>
-            <a href="./gallery.html" class="text-link-1 fw-600 mt-2">
-              Подробнее
-              <svg class="icon">
-                <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <h3 class="fs-3 fw-800 mb-4">Видео об Узбекистане</h3>
-            <a class="image-link" href="./video.html">
-              <img loading="lazy" src="./assets/img/tours/img-2.jpg" width="800" height="600" alt="title">
-              <span class="btn btn-play btn-primary" aria-label="Видео">
-                <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#play-fill"></use></svg>
-              </span>
-            </a>
-            <a href="./gallery.html" class="text-link-1 fw-600 mt-2">
-              Подробнее
-              <svg class="icon">
-                <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+
   </main>
 
   <section class="section-contact">
@@ -996,7 +959,26 @@
   <script src="./assets/js/dropzone.min.js"></script>
   <script src="./assets/js/air-datepicker.min.js"></script>
   <script src="./assets/js/bootstrap-input-spinner.js"></script>
+  <script src="./assets/js/readmore.js"></script>
   <script src="./assets/js/main.js"></script>
+
+  <script>
+    $('.hotel-description').readmore({
+      collapsedHeight: 120,
+      heightMargin: 0,
+      moreLink: '<a href="#" class="js-readmore-link">Читать дальше...</a>',
+      lessLink: '<a href="#" class="js-readmore-link js-readmore-link--expand">Скрыть</a>',
+      embedCSS: false,
+      blockCSS: "display: block; width: 100%;",
+      beforeToggle: function() {
+        $(".js-readmore").removeClass("js-readmore--open")
+      },
+      afterToggle: function(e, t, s) {
+        s && $(".js-readmore").addClass("js-readmore--open")
+      },
+    });
+  </script>
+
 
 </body>
 </html>
