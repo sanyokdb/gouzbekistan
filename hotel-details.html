@@ -382,7 +382,7 @@
       <div class="container">
 
         <div class="row g-4">
-          <div class="col-lg-6">
+          <div class="col-lg-6 hotel-left">
   
             <!-- Hotel Image -->
             <div class="hotel-image mb-4">
@@ -390,21 +390,31 @@
               <div class="package-image-single"><img src="./assets/img/hotels/img-1.jpg" alt="image"></div> -->
               <div class="hotel-image-main swiper swiper-nav2">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./assets/img/hotels/img-1.jpg" alt="image"></div>
-                  <div class="swiper-slide"><img src="./assets/img/hotels/img-1-2.jpg" alt="image"></div>
-                  <div class="swiper-slide"><img src="./assets/img/hotels/img-2.jpg" alt="image"></div>
-                  <div class="swiper-slide"><img src="./assets/img/hotels/img-3.jpg" alt="image"></div>
-                  <div class="swiper-slide"><img src="./assets/img/hotels/img-4.jpg" alt="image"></div>
+                  <div class="swiper-slide">
+                    <a href="./assets/img/hotels/img-1.jpg" data-fancybox="hotel-image"><img src="./assets/img/hotels/img-1.jpg" alt="image"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./assets/img/hotels/img-1-2.jpg" data-fancybox="hotel-image"><img src="./assets/img/hotels/img-1-2.jpg" alt="image"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./assets/img/hotels/img-2.jpg" data-fancybox="hotel-image"><img src="./assets/img/hotels/img-2.jpg" alt="image"></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="./assets/img/hotels/img-3.jpg" data-fancybox="hotel-image"><img src="./assets/img/hotels/img-3.jpg" alt="image"></a>
+                  </div>
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
               </div>
             </div>
 
-            <h5 class="fw-700">Расположение гостиницы на карте</h5>
+            <div id="hotelMap" class="hotel-map-wrap">
+              <h3 class="fs-20 fw-700">Расположение гостиницы на карте</h3>
+              <iframe class="hotel-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2046.9821452378678!2d64.42552601400143!3d39.761933450611124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f5007535c10e183%3A0x67d2ba146074ce05!2sSahid%20Zarafshon%20Hotel!5e0!3m2!1sru!2s!4v1733211647384!5m2!1sru!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
   
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 hotel-right">
 
             <div class="d-flex flex-wrap gap-2 mb-2">
               <h3 class="fs-26 fw-800 mb-0">Sahid Zarafshon Hotel</h3>
@@ -417,11 +427,11 @@
             </div>
 
             <div class="mb-4">
-              <span class="d-flex align-items-center gap-1">
+              <div class="d-flex align-items-center gap-1">
                 <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
                 <span class="fs-15">Бухара, Бахауддин Накшбанд, 11</span>
-              </span>
-              <a class="text-link-1 fs-15 fw-500" href="#!">Показать на карте</a>
+              </div>
+              <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map"></use></svg> <a class="text-link-1 fs-15 fw-500 smooth-scroll" href="#hotelMap">Показать на карте</a>
             </div>
 
             <div class="hotel-description mt-4">
@@ -430,7 +440,7 @@
             </div>
 
             <div class="mt-4">
-              <h5 class="fw-700">Условия</h5>
+              <h3 class="fs-20 fw-700">Условия</h3>
               <p>
                 <strong>Заезд:</strong> с 14:00<br>
                 <strong>Выезд:</strong> до 14:00
@@ -439,6 +449,87 @@
                 Размещение с домашними животными не предусмотрено.<br>
                 Бесплатная отмена бронирования за 3дня до прыбития. 
               </p>
+            </div>
+
+            <div class="hotel-rooms mt-4">
+              <h3 class="fs-20 fw-700">Номера</h3>
+
+              <div class="hotel-room">
+                <h4 class="hotel-room__title">Одноместный номер</h4>
+                <p class="hotel-room__desc">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                <div class="hotel-room__services">
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-toothbrush"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wardrobe"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-tv"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-cocktail"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-stairs"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-taxi"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wifi"></use></svg>
+                </div>
+                <div class="hotel-room__thumbs">
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-1.jpg" data-fancybox="room1" data-caption="Одноместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-1-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-2.jpg" data-fancybox="room1" data-caption="Одноместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-2-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-3.jpg" data-fancybox="room1" data-caption="Одноместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-3-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-4.jpg" data-fancybox="room1" data-caption="Одноместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-4-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                </div>
+                <div class="hotel-room__footer">
+                  <div class="hotel-room__price">от&nbsp;<span>$60</span> /&nbsp;сутки</div>
+                  <button type="button" class="btn btn-primary hotel-room__btn" data-bs-toggle="modal" data-bs-target="#modalHotelBron">
+                    Забронировать
+                  </button>
+                </div>
+              </div>
+              <div class="hotel-room">
+                <h4 class="hotel-room__title">Двухместный номер</h4>
+                <p class="hotel-room__desc">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                <div class="hotel-room__services">
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-toothbrush"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wardrobe"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-tv"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-cocktail"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-stairs"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-taxi"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wifi"></use></svg>
+                </div>
+                <div class="hotel-room__thumbs">
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-1.jpg" data-fancybox="room2" data-caption="Двухместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-1-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-2.jpg" data-fancybox="room2" data-caption="Двухместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-2-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-3.jpg" data-fancybox="room2" data-caption="Двухместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-3-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-4.jpg" data-fancybox="room2" data-caption="Двухместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-4-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                </div>
+                <div class="hotel-room__footer">
+                  <div class="hotel-room__price">от&nbsp;<span>$60</span> /&nbsp;сутки</div>
+                  <button type="button" class="btn btn-primary hotel-room__btn" data-bs-toggle="modal" data-bs-target="#modalHotelBron">
+                    Забронировать
+                  </button>
+                </div>
+              </div>
+              <div class="hotel-room">
+                <h4 class="hotel-room__title">Трехместный номер</h4>
+                <p class="hotel-room__desc">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+                <div class="hotel-room__services">
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-toothbrush"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wardrobe"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-tv"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-cocktail"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-stairs"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-taxi"></use></svg>
+                  <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wifi"></use></svg>
+                </div>
+                <div class="hotel-room__thumbs">
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-1.jpg" data-fancybox="room3" data-caption="Трехместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-1-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-2.jpg" data-fancybox="room3" data-caption="Трехместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-2-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-3.jpg" data-fancybox="room3" data-caption="Трехместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-3-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                  <a class="hotel-room__thumbs-link" href="./assets/img/rooms/img-4.jpg" data-fancybox="room3" data-caption="Трехместный номер" alt="Room"><img class="hotel-room__thumbs-img" loading="lazy" src="./assets/img/rooms/img-4-sm.jpg" width="68" height="68" alt="thumbs"></a>
+                </div>
+                <div class="hotel-room__footer">
+                  <div class="hotel-room__price">от&nbsp;<span>$60</span> /&nbsp;сутки</div>
+                  <button type="button" class="btn btn-primary hotel-room__btn" data-bs-toggle="modal" data-bs-target="#modalHotelBron">
+                    Забронировать
+                  </button>
+                </div>
+              </div>
+
             </div>
   
           </div>
@@ -453,111 +544,109 @@
         <h3 class="fs-3 fw-800 text-center mb-4">Услуги</h3>
         <ul class="list-reset hotel-services">
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Мини маркет</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Аптечка</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-door-key"></use></svg>
             <h6>Номера для некурящих</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-taxi"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-taxi"></use></svg>
             <h6>Заказ такси</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lamp"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-cocktail"></use></svg>
             <h6>Общая кухня</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-extinguisher"></use></svg>
             <h6>Огнетушители</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Оплата Виза карта</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Услуги глажки</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-cutlery"></use></svg>
             <h6>Ресторан</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Хранение багажа</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Обмен валюты</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Оплата Мастеркард</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Wi-Fi</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Прачечная (платно)</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-broom"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-broom"></use></svg>
             <h6>Ежедневная уборка</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Мечеть/Церковь/Храм</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Круглостучная охрана</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-cctv"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-cctv"></use></svg>
             <h6>Видеонаблюдение снаружи здания</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Вызов скорой медицинской помощи</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Датчики дыма</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Банкомат на територии отеля</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Доставка продуктов (платно)</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-lift"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
             <h6>Прямая транслация спортивных матчей</h6>
           </li>
           <li>
-            <svg class="icon"><use href="./assets/img/svgsprite/sprite.service.svg#icon-reception"></use></svg>
+            <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-reception"></use></svg>
             <h6>Круглостучная стойка регистрации</h6>
           </li>
         </ul>
       </div>
     </section>
 
-
-
     <section class="section-bottom">
       <div class="container">
         <h3 class="fs-2 fw-800 mb-4">Похожие гостиницы</h3>
-        <div class="package-slider swiper swiper-shadow">
+        <div class="hotel-slider swiper swiper-shadow">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <article class="hotel-card h-100">
@@ -581,13 +670,13 @@
                     Бухара, Бахауддин Накшбанд, 11
                   </p>
                   <div class="hotel-card__services">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#lift"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#velvet"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#mobile"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#key-card"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#hairdryer"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#washing-machine"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-lift"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-velvet"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-mobile"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-key-card"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-hairdryer"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-washing-machine"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-taxi"></use></svg>
                   </div>
                 </div>
               </article>
@@ -615,13 +704,13 @@
                     Ташкент, ул Тафаккур 24
                   </p>
                   <div class="hotel-card__services">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bellboy"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bell-ring"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#parking"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#table"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#hairdryer"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-bellboy"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-bell-ring"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-parking"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-table"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-hairdryer"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wifi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-taxi"></use></svg>
                   </div>
                 </div>
               </article>
@@ -648,13 +737,13 @@
                     Хива, Янги турмуш ул Нажмиддин Кубро
                   </p>
                   <div class="hotel-card__services">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bath"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#armchair"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#no-smoke"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#minibar"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#luggage"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-bath"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-armchair"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-no-smoke"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-minibar"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-luggage"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-taxi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wifi"></use></svg>
                   </div>
                 </div>
               </article>
@@ -682,13 +771,13 @@
                     Самарканд, Университет хиёбони 7
                   </p>
                   <div class="hotel-card__services">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bath"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#armchair"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#no-smoke"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#minibar"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#luggage"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-bath"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-armchair"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-no-smoke"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-minibar"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-luggage"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-taxi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wifi"></use></svg>
                   </div>
                 </div>
               </article>
@@ -715,13 +804,13 @@
                     Бухара, Бахауддин Накшбанд, 26
                   </p>
                   <div class="hotel-card__services">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#gym"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#alarm-clock"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#location"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#reception"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#door-key"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#bellboy"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-gym"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-alarm-clock"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-location"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-reception"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-door-key"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-bellboy"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wifi"></use></svg>
                   </div>
                 </div>
               </article>
@@ -748,13 +837,13 @@
                     Ташкент, ул Шивли 6-8
                   </p>
                   <div class="hotel-card__services">
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#toothbrush"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wardrobe"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#tv"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#cocktail"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#stairs"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#taxi"></use></svg>
-                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#wifi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-toothbrush"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wardrobe"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-tv"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-cocktail"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-stairs"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-taxi"></use></svg>
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#icon-wifi"></use></svg>
                   </div>
                 </div>
               </article>
@@ -952,6 +1041,54 @@
     </svg>
   </div>
 
+    <!-- Modal Hotel Bron -->
+    <div class="modal fade" id="modalHotelBron" tabindex="-1" aria-labelledby="modalHotelBronLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalHotelBronLabel">Забронировать номер</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center g-3 mb-4">
+              <div class="col-auto"><img class="rounded" src="./assets/img/rooms/img-1-sm.jpg" alt="Тут будет название тура"></div>
+              <div class="col"><h6 class="m-0">Одноместный номер</h6></div>
+            </div>
+            <form action="#" method="post">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Иван Иванов" required="" value="">
+                <label for="name"><span class="text-danger">*</span> Ваше имя</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="+998 00 000-00-00" value="">
+                <label for="phone">Телефон</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" name="email" placeholder="" value="">
+                <label for="email">E-mail</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn py-25 btn-outline-secondary flex-grow-1" data-bs-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn py-25 btn-primary flex-grow-1">Отправить</button>
+            <div class="text-success mt-3 w-100 d-none">
+              <svg class="icon">
+                <use href="./assets/img/svgsprite/sprite.symbol.svg#checkbox-circle"></use>
+              </svg>
+              Спасибо за Ваше сообщение. Оно успешно отправлено.
+            </div>
+            <div class="text-danger mt-3 w-100 d-none">
+              <svg class="icon">
+                <use href="./assets/img/svgsprite/sprite.symbol.svg#error-warning"></use>
+              </svg>
+              При отправке сообщения произошла ошибка. Пожалуйста, попробуйте ещё раз позже.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/fancybox.umd.js"></script>
@@ -966,16 +1103,9 @@
     $('.hotel-description').readmore({
       collapsedHeight: 120,
       heightMargin: 0,
-      moreLink: '<a href="#" class="js-readmore-link">Читать дальше...</a>',
-      lessLink: '<a href="#" class="js-readmore-link js-readmore-link--expand">Скрыть</a>',
+      moreLink: '<a href="#" class="text-link-1">Читать дальше...</a>',
+      lessLink: '<a href="#" class="text-link-1 js-readmore-link--expand">Скрыть</a>',
       embedCSS: false,
-      blockCSS: "display: block; width: 100%;",
-      beforeToggle: function() {
-        $(".js-readmore").removeClass("js-readmore--open")
-      },
-      afterToggle: function(e, t, s) {
-        s && $(".js-readmore").addClass("js-readmore--open")
-      },
     });
   </script>
 
