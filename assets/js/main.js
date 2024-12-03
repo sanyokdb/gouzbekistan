@@ -147,7 +147,6 @@ const country = new Swiper(".country-slider", {
 const postSlider = new Swiper(".post-slider", {
   slidesPerView: 1,
   speed: 600,
-  autoHeight: true,
   // loop: true,
   spaceBetween: 20,
   autoplay: {
@@ -176,7 +175,6 @@ const postSlider = new Swiper(".post-slider", {
 const packageSlider = new Swiper(".package-slider", {
   slidesPerView: 1,
   speed: 600,
-  autoHeight: true,
   // loop: true,
   spaceBetween: 20,
   autoplay: {
@@ -241,11 +239,37 @@ const hotelImageMain = new Swiper(".hotel-image-main", {
   }
 });
 
+// package-slider
+const hotelSlider = new Swiper(".hotel-slider", {
+  slidesPerView: 1,
+  speed: 600,
+  // loop: true,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
 // hotels2-slider
 const hotels2Slider = new Swiper(".hotels2-slider", {
   slidesPerView: 1,
   speed: 600,
-  autoHeight: true,
   // loop: true,
   spaceBetween: 20,
   navigation: {
