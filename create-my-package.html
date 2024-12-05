@@ -12,6 +12,7 @@
   <link href="./assets/css/fancybox.min.css" rel="stylesheet">
   <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet">
   <link href="./assets/css/dropzone.min.css" rel="stylesheet">
+  <link href="./assets/css/air-datepicker.min.css" rel="stylesheet">
   <link href="./assets/css/style.min.css" rel="stylesheet">
 </head>
 <body>
@@ -320,7 +321,7 @@
                 <a class="nav-link active" aria-current="page" href="./about.html">О нас</a>
               </li>
             </ul>
-            <a class="btn btn-pill btn-lg btn-custom2 btn-blick d-lg-none" href="#!">
+            <a class="btn btn-pill btn-lg btn-custom2 btn-blick d-lg-none" href="./create-my-package.html">
               Создайте свой тур
               <svg class="icon fs-18">
                 <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
@@ -349,7 +350,7 @@
             </form>
           </div>
         </div>
-        <a class="btn btn-pill btn-lg btn-custom2 btn-blick d-none d-lg-inline-block" href="#!">
+        <a class="btn btn-pill btn-lg btn-custom2 btn-blick d-none d-lg-inline-block" href="./create-my-package.html">
           Создайте свой тур
           <svg class="icon fs-18">
             <use href="./assets/img/svgsprite/sprite.symbol.svg#arrow-right-up"></use>
@@ -369,136 +370,162 @@
         <li class="breadcrumb-item"><a href="./index.html">Главная</a></li>
         <li class="breadcrumb-item active" aria-current="page">Создай свой тур</li>
       </ol>
-      <h1 class="page-header__title">Создай свой тур</h1>
+      <h1 class="page-header__title">Создайте свой тур по&nbsp;индивидуальному желаемому маршруту</h1>
+      <div class="fs-18 fw-500 mt-3">Наслаждайтесь безопасным и&nbsp;индивидульным путешествием с&nbsp;GoUzbekistan</div>
     </div>
   </section>
 
   <main class="main">
 
-    <section class="section">
+    <section class="section create-package-form" style="background-image: url(./assets/img/create-package/bg.jpg);">
+      <div class="create-package-form__overlay"></div>
       <div class="container">
+
+        <div class="row justify-content-center position-relative">
+          <div class="col-lg-9">
+
+            <div class="bg-white border rounded-3 p-4 mb-5 box-shadow">
+              <h4 class="fw-700 mb-5"><span class="text-danger">*</span> Какое ваше идеальное путешествие?</h4>
+
+                <div class="mb-5">
+                  <h6 class="fw-700">Тип отеля</h6>
+                  <div class="row g-3">
+                    <div class="col-xm-6 col-lg-3">
+                      <input type="radio" class="btn-check" id="btn-check-outlined-1" name="hotel-type" autocomplete="off">
+                      <label class="btn btn-outline-check py-25 w-100" for="btn-check-outlined-1" name="hotel-type">Премиум класс</label>
+                    </div>
+                    <div class="col-xm-6 col-lg-3">
+                      <input type="radio" class="btn-check" id="btn-check-outlined-2" name="hotel-type" autocomplete="off">
+                      <label class="btn btn-outline-check py-25 w-100" for="btn-check-outlined-2" name="hotel-type">Бизнес класс</label>
+                    </div>
+                    <div class="col-xm-6 col-lg-3">
+                      <input type="radio" class="btn-check" id="btn-check-outlined-3" name="hotel-type" autocomplete="off">
+                      <label class="btn py-25 btn-outline-check py-25 w-100" for="btn-check-outlined-3" name="hotel-type">Бутик отели</label>
+                    </div>
+                    <div class="col-xm-6 col-lg-3">
+                      <input type="radio" class="btn-check" id="btn-check-outlined-4" name="hotel-type" autocomplete="off">
+                      <label class="btn py-25 btn-outline-check py-25 w-100" for="btn-check-outlined-4" name="hotel-type">Бронирую сам</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-5">
+                  <div class="row gy-0 gx-3 align-items-center">
+                    <div class="col-xm-6 col-lg-3">
+                      <h6 class="fw-700">Количество дней</h6>
+                    </div>
+                    <div class="col-xm-6 col-lg-9">
+                      <input type="number" name="rooms" value="1" min="1" max="10" step="1" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-5">
+                  <div class="row gy-0 gx-3">
+                    <div class="col-xm-6 col-lg-3">
+                      <h6 class="mt-xm-2 fw-700">Дата прибытия</h6>
+                    </div>
+                    <div class="col-xm-6 col-lg-9">
+                      <div class="input-icon">
+                        <input class="form-control py-25 js-datepicker" type="text" name="startdate" readonly>
+                        <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#calendar"></use></svg>
+                      </div>
+                      <div class="form-check form-switch mt-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Гибкие даты?</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-2">
+                  <h6 class="fw-700">Направления</h6>
+                  <p>Чем вам могут помочь наши эксперты по&nbsp;путешествиям?</p>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Укажите свои пожелания и предпочтения, чтобы мы смогли сделать Ваше путешествие особенным."></textarea>
+                </div>
+                
+            </div>
+
+            <div class="bg-white border rounded-3 p-4 mb-5 box-shadow">
+              <h4 class="fw-700 mb-5"><span class="text-danger">*</span> Расскажите нам о себе</h4>
+
+                <div class="mb-5">
+                  <h6 class="fw-700">Кто путешествует с вами?</h6>
+                  <div class="row g-3">
+                    <div class="col-xm-6 col-lg-3">
+                      <input type="radio" class="btn-check" id="btn-check-outlined-5" name="who-traveling" autocomplete="off">
+                      <label class="btn btn-outline-check py-25 w-100" for="btn-check-outlined-5" name="who-traveling">Я один</label>
+                    </div>
+                    <div class="col-xm-6 col-lg-3">
+                      <input type="radio" class="btn-check" id="btn-check-outlined-6" name="who-traveling" autocomplete="off">
+                      <label class="btn btn-outline-check py-25 w-100" for="btn-check-outlined-6" name="who-traveling">Нас двое</label>
+                    </div>
+                    <div class="col-xm-6 col-lg-3">
+                      <input type="radio" class="btn-check" id="btn-check-outlined-7" name="who-traveling" autocomplete="off">
+                      <label class="btn py-25 btn-outline-check py-25 w-100" for="btn-check-outlined-7" name="who-traveling">Семья</label>
+                    </div>
+                    <div class="col-xm-6 col-lg-3">
+                      <input type="radio" class="btn-check" id="btn-check-outlined-8" name="who-traveling" autocomplete="off">
+                      <label class="btn py-25 btn-outline-check py-25 w-100" for="btn-check-outlined-8" name="who-traveling">Группа</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-5">
+                  <h6 class="fw-700">Ваша страна</h6>
+                  <div class="input-icon">
+                    <input class="form-control py-25" type="text" name="country" placeholder="Укажите страну">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#map-pin"></use></svg>
+                  </div>
+                </div>
+
+                <div class="mb-5">
+                  <h6 class="fw-700">Ваше имя</h6>
+                  <div class="input-icon">
+                    <input class="form-control py-25" type="text" name="name" placeholder="Укажите свой адрес эл.почты">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#user"></use></svg>
+                  </div>
+                </div>
+
+                <div class="mb-5">
+                  <h6 class="fw-700">Ваш E-mail</h6>
+                  <div class="input-icon">
+                    <input class="form-control py-25" type="text" name="email" placeholder="Укажите страну">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#mail"></use></svg>
+                  </div>
+                  <div class="form-text">Пожалуйста, проверьте свой адрес электронной почты, чтобы мы&nbsp;могли с&nbsp;вами точно связаться.</div>
+                </div>
+
+                <div class="mb-5">
+                  <h6 class="fw-700">Номер телефона</h6>
+                  <div class="input-icon">
+                    <input class="form-control py-25" type="text" name="phone" placeholder="Укажите страну">
+                    <svg class="icon"><use href="./assets/img/svgsprite/sprite.symbol.svg#phone"></use></svg>
+                  </div>
+                  <div class="form-text">Мы&nbsp;позвоним Вам только с&nbsp;вашего разрешения и&nbsp;только касательно вашего запроса.</div>
+                </div>
+                
+            </div>
+
+            <div class="bg-white border rounded-3 p-4">
+              <button class="btn btn-primary btn-lg w-100" type="submit">Отправить мой запрос</button>
+            </div>
+
+
+          </div>
+        </div>
         
-        <div class="mb-4">
-          <input type="radio" class="btn-check" id="btn-check-outlined-1" name="hotel-type" autocomplete="off">
-          <label class="btn py-25 btn-outline-check" for="btn-check-outlined-1" name="hotel-type">Премиум класс</label>
-          <input type="radio" class="btn-check" id="btn-check-outlined-2" name="hotel-type" autocomplete="off">
-          <label class="btn py-25 btn-outline-check" for="btn-check-outlined-2" name="hotel-type">Бизнес класс</label>
-          <input type="radio" class="btn-check" id="btn-check-outlined-3" name="hotel-type" autocomplete="off">
-          <label class="btn py-25 btn-outline-check" for="btn-check-outlined-3" name="hotel-type">Бутик отели</label>
-          <input type="radio" class="btn-check" id="btn-check-outlined-4" name="hotel-type" autocomplete="off">
-          <label class="btn py-25 btn-outline-check" for="btn-check-outlined-4" name="hotel-type">Бронрую сам</label>
-        </div>
 
-      </div>
-    </section>
-
-    <section class="section-cta">
-      <div class="container position-relative">
-        <img class="position-absolute bottom-0 d-none d-lg-block" src="./assets/img/cta/girl.png" width="548" height="388" alt="girl">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-6 py-6 position-relative">
-              <h3 class="fs-2 fw-800 mb-4 text-white">Получить консультацию сейчас!</h3>
-              <p class="fs-18 mb-5 text-white">Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt blandit interdum.</p>
-              <div class="d-flex flex-wrap gap-3">
-                <a class="btn btn-pill btn-lg btn-outline-light border-2" href="tel:+998908558586">
-                  <svg class="icon fs-20"><use href="./assets/img/svgsprite/sprite.symbol.svg#phone"></use></svg>
-                  +998 90 855 85 86
-                </a>
-                <button type="button" class="btn btn-pill btn-lg btn-custom3 border-2" data-bs-toggle="modal" data-bs-target="#modalOutprice">
-                  Узнать стоимость
-                </button>
-              </div>
-          </div>
-        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="team-card">
-              <img class="img-fluid rounded-3" loading="lazy" src="./assets/img/team/img-1.jpg" width="500" height="500" alt="Тимур Бакаев">
-              <div class="text-center p-3">
-								<h5 class="fw-700 m-0">Тимур Бакаев</h5>
-								<span class="fw-500 fs-15">CEO GoUzbekistan</span>
-								<p class="mt-2 mb-0 fs-15 lh-sm">Управляет всем что есть в&nbsp;офисе и&nbsp;вне офиса</p>
-							</div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="team-card">
-              <img class="img-fluid rounded-3" loading="lazy" src="./assets/img/team/img-2.jpg" width="500" height="500" alt="Тимур Бакаев">
-              <div class="text-center p-3">
-								<h5 class="fw-700 m-0">Тимур Бакаев</h5>
-								<span class="fw-500 fs-15">CEO GoUzbekistan</span>
-								<p class="mt-2 mb-0 lh-sm">Управляет всем что есть в&nbsp;офисе и&nbsp;вне офиса</p>
-							</div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="team-card">
-              <img class="img-fluid rounded-3" loading="lazy" src="./assets/img/team/img-3.jpg" width="500" height="500" alt="Тимур Бакаев">
-              <div class="text-center p-3">
-								<h5 class="fw-700 m-0">Тимур Бакаев</h5>
-								<span class="fw-500 fs-15">CEO GoUzbekistan</span>
-								<p class="mt-2 mb-0 lh-sm">Управляет всем что есть в&nbsp;офисе и&nbsp;вне офиса</p>
-							</div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="team-card">
-              <img class="img-fluid rounded-3" loading="lazy" src="./assets/img/team/img-4.jpg" width="500" height="500" alt="Тимур Бакаев">
-              <div class="text-center p-3">
-								<h5 class="fw-700 m-0">Тимур Бакаев</h5>
-								<span class="fw-500 fs-15">CEO GoUzbekistan</span>
-								<p class="mt-2 mb-0 lh-sm">Управляет всем что есть в&nbsp;офисе и&nbsp;вне офиса</p>
-							</div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="team-card">
-              <img class="img-fluid rounded-3" loading="lazy" src="./assets/img/team/img-5.jpg" width="500" height="500" alt="Тимур Бакаев">
-              <div class="text-center p-3">
-								<h5 class="fw-700 m-0">Тимур Бакаев</h5>
-								<span class="fw-500 fs-15">CEO GoUzbekistan</span>
-								<p class="mt-2 mb-0 lh-sm">Управляет всем что есть в&nbsp;офисе и&nbsp;вне офиса</p>
-							</div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="team-card">
-              <img class="img-fluid rounded-3" loading="lazy" src="./assets/img/team/img-6.jpg" width="500" height="500" alt="Тимур Бакаев">
-              <div class="text-center p-3">
-								<h5 class="fw-700 m-0">Тимур Бакаев</h5>
-								<span class="fw-500 fs-15">CEO GoUzbekistan</span>
-								<p class="mt-2 mb-0 lh-sm">Управляет всем что есть в&nbsp;офисе и&nbsp;вне офиса</p>
-							</div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="team-card">
-              <img class="img-fluid rounded-3" loading="lazy" src="./assets/img/team/img-7.jpg" width="500" height="500" alt="Тимур Бакаев">
-              <div class="text-center p-3">
-								<h5 class="fw-700 m-0">Тимур Бакаев</h5>
-								<span class="fw-500 fs-15">CEO GoUzbekistan</span>
-								<p class="mt-2 mb-0 lh-sm">Управляет всем что есть в&nbsp;офисе и&nbsp;вне офиса</p>
-							</div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-3">
-            <div class="team-card">
-              <img class="img-fluid rounded-3" loading="lazy" src="./assets/img/team/img-8.jpg" width="500" height="500" alt="Тимур Бакаев">
-              <div class="text-center p-3">
-								<h5 class="fw-700 m-0">Тимур Бакаев</h5>
-								<span class="fw-500 fs-15">CEO GoUzbekistan</span>
-								<p class="mt-2 mb-0 lh-sm">Управляет всем что есть в&nbsp;офисе и&nbsp;вне офиса</p>
-							</div>
-            </div>
-          </div>
-        </div>
+        <p>В&nbsp;первой подборке мы&nbsp;освещаем древний период с&nbsp;акцентом на&nbsp;незападные религии и&nbsp;межкультурное взаимодействие на&nbsp;Шелковом пути. В&nbsp;этот период земля Узбекистана сегодня называлась Согдианой, по&nbsp;имени знаменитых согдийских купцов. В&nbsp;первом выборе мы&nbsp;освещаем древний период, уделяя особое внимание незападным религиям и&nbsp;межкультурному взаимодействию по&nbsp;Шелковому пути. В&nbsp;этот период земля, которая сегодня является Узбекистаном, называлась Согдианой, назван в&nbsp;честь знаменитых согдийских купцов. В&nbsp;первой подборке мы&nbsp;освещаем древний период с&nbsp;акцентом на&nbsp;незападные религии и&nbsp;межкультурное взаимодействие на&nbsp;Шелковом пути. В&nbsp;этот период земля Узбекистана сегодня называлась Согдианой, по&nbsp;имени знаменитых согдийских купцов. В&nbsp;первом выборе мы&nbsp;освещаем древний период, уделяя особое внимание незападным религиям и&nbsp;межкультурному взаимодействию по&nbsp;Шелковому пути. В&nbsp;этот период земля, которая сегодня является Узбекистаном, называлась Согдианой, назван в&nbsp;честь знаменитых согдийских купцов.</p>
+        <p>В&nbsp;первой подборке мы&nbsp;освещаем древний период с&nbsp;акцентом на&nbsp;незападные религии и&nbsp;межкультурное взаимодействие на&nbsp;Шелковом пути. В&nbsp;этот период земля Узбекистана сегодня называлась Согдианой, по&nbsp;имени знаменитых согдийских купцов. В&nbsp;первом выборе мы&nbsp;освещаем древний период, уделяя особое внимание незападным религиям и&nbsp;межкультурному взаимодействию по&nbsp;Шелковому пути. В&nbsp;этот период земля, которая сегодня является Узбекистаном, называлась Согдианой, назван в&nbsp;честь знаменитых согдийских купцов. В&nbsp;первой подборке мы&nbsp;освещаем древний период с&nbsp;акцентом на&nbsp;незападные религии и&nbsp;межкультурное взаимодействие на&nbsp;Шелковом пути. В&nbsp;этот период земля Узбекистана сегодня называлась Согдианой, по&nbsp;имени знаменитых согдийских купцов. В&nbsp;первом выборе мы&nbsp;освещаем древний период, уделяя особое внимание незападным религиям и&nbsp;межкультурному взаимодействию по&nbsp;Шелковому пути. В&nbsp;этот период земля, которая сегодня является Узбекистаном, называлась Согдианой, назван в&nbsp;честь знаменитых согдийских купцов.</p>
       </div>
     </section>
+
 
   </main>
 
