@@ -344,7 +344,7 @@ $('a.smooth-scroll[href*="#"]').on("click", function (e) {
 
 // Spiner
 $("input[type='number']").inputSpinner({
-  buttonsClass: "btn-outline-primary",
+  buttonsClass: "btn-outline-gray",
   groupClass: "inputSpiner-1",
 });
 
@@ -356,6 +356,8 @@ new AirDatepicker(".js-dateRange", {
   grid: 2,
   calendars: 2,
 });
+
+new AirDatepicker('.js-datepicker');
 
 // Dropzone
 $("#add-photo").on("click", function () {
